@@ -4,7 +4,7 @@
  */
 export const site = {
   name: 'Atlas Code',
-  url: 'https://www.atlascode.ma', // TODO: real domain, no trailing slash (consider a .com / .io for an international audience)
+  url: 'https://atlascode-xi.vercel.app', // No trailing slash. Change this when you connect a custom domain (e.g. a .com).
   tagline: 'Live Online Coding Bootcamp',
   description:
     'Atlas Code is a live online coding bootcamp for learners in the UK, the US and Canada, offering full-time and part-time programs in full-stack web development, data analytics and UI/UX design.',
