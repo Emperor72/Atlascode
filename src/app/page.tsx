@@ -8,37 +8,38 @@ import { coreMetadata } from '@/components/CorePage';
 import { CtaBand, PostCard, ProgramCard } from '@/components/Cards';
 import { Faq } from '@/components/Faq';
 import { JsonLd } from '@/components/JsonLd';
+import { Icon, type IconName } from '@/components/Icons';
 
 export const metadata = coreMetadata('/');
 
 const reasons = [
   {
-    icon: '⌨',
+    icon: 'code' as IconName,
     title: 'You learn by building',
     text: 'About 80% of your time is spent writing code, designing or analysing data, not watching slides. Every week ends with something real you can show an employer.',
   },
   {
-    icon: '👥',
+    icon: 'users' as IconName,
     title: 'Small cohorts, real attention',
     text: 'Cohorts are kept small so instructors and teaching assistants know your code, your blockers and your goals, and can step in before you fall behind.',
   },
   {
-    icon: '🧭',
+    icon: 'layers' as IconName,
     title: 'A curriculum built for the market',
     text: 'We teach the stack agencies, startups, in-house teams and remote-first employers actually use, including JavaScript, TypeScript, React, Node.js, SQL, Python, Power BI and Figma, and we update it every cohort.',
   },
   {
-    icon: '🎯',
+    icon: 'briefcase' as IconName,
     title: 'Career services from week one',
     text: 'CV and LinkedIn workshops, GitHub portfolio reviews, mock technical interviews and introductions to employers are part of every program, not an optional extra.',
   },
   {
-    icon: '🌍',
+    icon: 'video' as IconName,
     title: 'Live online, in your time zone',
     text: 'Cohorts run live in UK time or US Eastern Time, so you learn with a real instructor and classmates during hours that fit your life, from anywhere.',
   },
   {
-    icon: '🕒',
+    icon: 'calendar' as IconName,
     title: 'Full-time or while you work',
     text: 'Choose an intensive full-time bootcamp or our part-time evening and Saturday format. Same curriculum, same projects, same career support.',
   },
@@ -197,7 +198,7 @@ export default function HomePage() {
             {reasons.map((r) => (
               <article className="card" key={r.title}>
                 <span className="icon" aria-hidden="true">
-                  {r.icon}
+                  <Icon name={r.icon} />
                 </span>
                 <h3>{r.title}</h3>
                 <p>{r.text}</p>

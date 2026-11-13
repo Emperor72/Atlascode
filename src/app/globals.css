@@ -638,10 +638,17 @@ code {
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: var(--sun-100);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.14), rgba(34, 211, 238, 0.12));
+  border: 1px solid rgba(99, 102, 241, 0.22);
   color: var(--sun-600);
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+.card:hover .icon {
+  background: var(--grad);
+  border-color: transparent;
+  color: #fff;
+  transform: translateZ(30px);
 }
 .program-card {
   position: relative;
