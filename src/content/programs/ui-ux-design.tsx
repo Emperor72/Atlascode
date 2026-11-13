@@ -7,27 +7,27 @@ const p = site.programs.uxui;
 
 export const meta: ProgramMeta = {
   slug: 'ui-ux-design',
-  title: 'UI/UX Design Bootcamp in Agadir: Figma & UX | Atlas Code',
+  title: 'Online UI/UX Design Bootcamp: Figma & UX | Atlas Code',
   description:
-    'Learn UX research, Figma, design systems and usability testing in 8 weeks in Agadir, and graduate with a portfolio of three case studies. Apply now.',
-  h1: 'UI/UX Design Bootcamp',
-  lead: 'Eight full-time weeks on our Agadir campus to learn how to research, design, prototype and test digital products — including bilingual Arabic and French interfaces — and leave with a portfolio of three case studies.',
+    'Learn UX research, Figma, design systems and usability testing in 8 weeks of live online classes for the UK, US and Canada; graduate with three case studies.',
+  h1: 'Online UI/UX Design Bootcamp',
+  lead: 'Eight full-time weeks of live online classes to learn how to research, design, prototype and test digital products — with accessibility and inclusive design built in — and leave with a portfolio of three case studies.',
   crumb: 'UI/UX Design',
   summary:
-    'Learn UX research, Figma, design systems, usability testing and bilingual RTL interfaces in 8 full-time weeks, and build three portfolio case studies.',
-  badge: 'Full-time · 8 weeks',
+    'Learn UX research, Figma, design systems, remote usability testing and accessible design in 8 full-time weeks of live online classes, and build three portfolio case studies.',
+  badge: 'Full-time · 8 weeks · Online',
   related: [
     '/programs/full-stack-web-development/',
     '/admissions/',
     '/career-services/',
-    '/blog/remote-developer-jobs-from-morocco/',
+    '/blog/remote-developer-jobs-guide/',
   ],
   course: {
-    name: 'UI/UX Design Bootcamp',
+    name: 'Online UI/UX Design Bootcamp',
     price: p.price,
     hours: 300,
     weeks: 8,
-    mode: 'Onsite',
+    mode: 'Online',
   },
 };
 
@@ -40,9 +40,9 @@ export default function Content() {
           <h2 className="section-title" id="key-facts">Key facts</h2>
           <dl className="key-facts">
             <div><dt>Duration</dt><dd>8 weeks, full-time (about 300 hours)</dd></div>
-            <div><dt>Schedule</dt><dd>Monday to Friday, 9:00–17:30</dd></div>
-            <div><dt>Format</dt><dd>Onsite, on our campus in {site.address.city}</dd></div>
-            <div><dt>Language of instruction</dt><dd>English &amp; French, with Darija support</dd></div>
+            <div><dt>Schedule</dt><dd>Monday to Friday, 9:00–17:30 in your cohort’s time zone</dd></div>
+            <div><dt>Format</dt><dd>Live online, in {site.timezones.uk} or {site.timezones.na}</dd></div>
+            <div><dt>Language of instruction</dt><dd>English</dd></div>
             <div><dt>Tuition</dt><dd>{p.priceLabel}</dd></div>
             <div><dt>Next start</dt><dd>{p.nextStart}</dd></div>
           </dl>
@@ -69,8 +69,8 @@ export default function Content() {
           <h2 className="section-title" id="who">Who this bootcamp is for</h2>
           <p className="section-intro">
             Good design is not decoration: it is how a banking app, a booking site or a public service becomes easy to
-            use. This UI/UX design bootcamp in Agadir is for people who care about other people’s experience and want to
-            design it on purpose.
+            use. This online UI/UX design bootcamp is for people in {site.marketsLabel} who care about other people’s
+            experience and want to design it on purpose.
           </p>
           <div className="grid grid-3">
             <article className="card">
@@ -101,15 +101,17 @@ export default function Content() {
               No design degree and no coding required. Curiosity about people and attention to detail matter more than
               drawing skills.
             </li>
-            <li>A laptop able to run Figma in the browser or desktop app smoothly, with a mouse recommended.</li>
             <li>
-              Comfort reading English or French; working knowledge of Arabic is a plus for the RTL interface module but
-              not required.
+              A laptop able to run Figma in the browser or desktop app smoothly, a mouse, a reliable broadband connection,
+              a webcam and a headset with a microphone.
             </li>
-            <li>Willingness to talk to strangers — you will interview and test with real users around Agadir.</li>
+            <li>Comfort reading English and taking part in live discussions and critiques in English.</li>
             <li>
-              Completing our <Link href="/admissions/">admissions process</Link>, which includes a short design-thinking
-              exercise instead of a coding test.
+              Willingness to talk to strangers — you will recruit, interview and test with real users over video calls.
+            </li>
+            <li>
+              Completing our <Link href="/admissions/">admissions process</Link>, which includes a video call and a short
+              design-thinking exercise instead of a coding test.
             </li>
           </ul>
           <p>
@@ -140,14 +142,14 @@ export default function Content() {
             <li>
               Build and document a small design system: colour, typography, spacing, components and usage rules.
             </li>
-            <li>Create interactive prototypes and run moderated usability tests, then prioritise fixes.</li>
+            <li>Create interactive prototypes and run remote moderated usability tests, then prioritise fixes.</li>
             <li>
               Apply accessibility principles from WCAG: contrast, focus order, text alternatives, touch targets and
               readable content.
             </li>
             <li>
-              Design bilingual interfaces for the Moroccan market, including right-to-left Arabic layouts alongside
-              French.
+              Design inclusive interfaces that work across devices, languages and abilities, including layouts that can
+              be localised for other markets.
             </li>
             <li>Hand off designs to developers clearly, and present your work as convincing case studies.</li>
           </ul>
@@ -166,21 +168,21 @@ export default function Content() {
               <h3>Week 1 · Design thinking and UX research</h3>
               <p>
                 The UX process, problem framing, research planning, interview techniques and surveys. You run your first
-                interviews with real people and practise neutral questioning.
+                remote interviews with real people and practise neutral questioning.
               </p>
             </li>
             <li>
               <h3>Week 2 · Personas, journeys and information architecture</h3>
               <p>
-                Affinity mapping, personas, empathy maps and journey maps. Sitemaps, user flows, card sorting and
-                navigation patterns.
+                Affinity mapping on a shared online whiteboard, personas, empathy maps and journey maps. Sitemaps, user
+                flows, card sorting and navigation patterns.
               </p>
             </li>
             <li>
               <h3>Week 3 · Wireframing and Figma fundamentals</h3>
               <p>
                 Sketching, low-fidelity wireframes and rapid iteration. Figma frames, auto layout, constraints,
-                components and collaboration.
+                components and real-time collaboration.
               </p>
             </li>
             <li>
@@ -193,23 +195,23 @@ export default function Content() {
             <li>
               <h3>Week 5 · Prototyping and usability testing</h3>
               <p>
-                Interactive prototypes, micro-interactions, test scripts, moderated usability sessions and turning
+                Interactive prototypes, micro-interactions, test scripts, remote moderated usability sessions and turning
                 observations into prioritised changes.
               </p>
             </li>
             <li>
-              <h3>Week 6 · Accessibility and UI for the Moroccan market</h3>
+              <h3>Week 6 · Accessibility and inclusive design</h3>
               <p>
-                WCAG principles in practice. Designing right-to-left Arabic interfaces, mirroring layouts, choosing Arabic
-                and Latin typefaces that work together, and handling language switching between Arabic and French.
-                Second case study completed.
+                WCAG principles in practice: colour and contrast, keyboard and screen reader journeys, plain language and
+                designing for a range of abilities. Planning for localisation — longer text, different date and currency
+                formats, and right-to-left scripts. Second case study completed.
               </p>
             </li>
             <li>
               <h3>Weeks 7–8 · Final project, portfolio and presentation</h3>
               <p>
                 A complete end-to-end project, developer hand-off, then three polished case studies for your portfolio.
-                The program ends with a presentation of your final project to a panel.
+                The program ends with a live online presentation of your final project to a panel.
               </p>
             </li>
           </ol>
@@ -221,8 +223,8 @@ export default function Content() {
           <p className="eyebrow">Weekly rhythm</p>
           <h2 className="section-title" id="typical-week">A typical week</h2>
           <p className="section-intro">
-            Design is learned by doing, critiquing and redoing. Each week mixes theory, studio time and contact with real
-            users.
+            Design is learned by doing, critiquing and redoing. Each week mixes live lessons, online studio time and
+            contact with real users, in your cohort’s time zone ({site.timezones.uk} or {site.timezones.na}).
           </p>
           <div className="table-wrap">
             <table>
@@ -230,18 +232,19 @@ export default function Content() {
                 <tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Afternoon</th></tr>
               </thead>
               <tbody>
-                <tr><td>Monday</td><td>Lesson on the week’s method</td><td>Brief and kick-off of the weekly challenge</td></tr>
-                <tr><td>Tuesday</td><td>Workshop and guided exercises</td><td>Studio time in Figma with instructor support</td></tr>
-                <tr><td>Wednesday</td><td>Fieldwork: interviews or tests with users</td><td>Synthesis and iteration</td></tr>
-                <tr><td>Thursday</td><td>Tool deep-dive (Figma, prototyping, accessibility checks)</td><td>Studio time and one-to-one feedback</td></tr>
-                <tr><td>Friday</td><td>Final polish</td><td>Design critique: present your work and give feedback to peers</td></tr>
+                <tr><td>Monday</td><td>Live lesson on the week’s method</td><td>Brief and kick-off of the weekly challenge</td></tr>
+                <tr><td>Tuesday</td><td>Workshop and guided exercises in breakout rooms</td><td>Studio time in Figma with instructor support</td></tr>
+                <tr><td>Wednesday</td><td>Fieldwork: remote interviews or tests with users</td><td>Synthesis and iteration</td></tr>
+                <tr><td>Thursday</td><td>Tool deep-dive (Figma, prototyping, accessibility checks)</td><td>Studio time and 1:1 video feedback</td></tr>
+                <tr><td>Friday</td><td>Final polish</td><td>Design critique: present your work on screen and give feedback to peers</td></tr>
               </tbody>
             </table>
           </div>
           <div className="callout">
             <p>
               <strong>Tip:</strong> Critique sessions can feel uncomfortable at first. They are where most of the
-              learning happens — and they prepare you for real design reviews with clients and product teams.
+              learning happens — and they prepare you for real design reviews with clients and distributed product
+              teams. Lessons are recorded; see how our <Link href="/online-learning/">live online classroom</Link> works.
             </p>
           </div>
         </div>
@@ -259,15 +262,15 @@ export default function Content() {
             <article className="card">
               <h3>Case study 1 · Redesign</h3>
               <p>
-                Research and redesign an existing service people in Agadir use every day — for example a transport,
-                healthcare appointment or administrative booking flow — with before-and-after evidence.
+                Research and redesign an everyday service — for example a transport ticketing, healthcare appointment or
+                local council booking flow — with before-and-after evidence from real users.
               </p>
             </article>
             <article className="card">
-              <h3>Case study 2 · Bilingual mobile app</h3>
+              <h3>Case study 2 · Accessible mobile app</h3>
               <p>
-                Design a mobile app in Arabic and French, for instance for a local cooperative selling argan products or
-                a tourism activity, with a full RTL layout and an accessible design system.
+                Design a mobile app for a small business or community organisation, such as an independent shop or a
+                volunteering group, with an accessible design system and a layout ready for localisation.
               </p>
             </article>
             <article className="card">
@@ -293,23 +296,24 @@ export default function Content() {
             <article className="card">
               <h3>Research and testing</h3>
               <p>
-                Interview guides, surveys with online form tools, affinity mapping, card sorting, usability test scripts
-                and simple analytics.
+                Interview guides, surveys with online form tools, affinity mapping, card sorting, remote usability test
+                scripts, video-call recording and simple analytics.
               </p>
             </article>
             <article className="card">
               <h3>Accessibility and hand-off</h3>
               <p>
-                WCAG guidelines, contrast checkers, screen reader basics, RTL layout checks and developer hand-off with
+                WCAG guidelines, contrast checkers, screen reader basics, localisation checks and developer hand-off with
                 specs and annotations.
               </p>
             </article>
           </div>
           <p>
             Designers who understand code collaborate better with developers. If you want to go further, the{' '}
-            <Link href="/programs/full-stack-web-development/">full-stack web development bootcamp</Link> teaches HTML,
-            CSS and React in depth, and the <Link href="/programs/intro-to-coding/">Intro to Coding weekend workshop</Link>{' '}
-            is a lighter way to learn the basics.
+            <Link href="/programs/full-stack-web-development/">online full-stack web development bootcamp</Link> teaches
+            HTML, CSS and React in depth, and the{' '}
+            <Link href="/programs/intro-to-coding/">Intro to Coding online weekend workshop</Link> is a lighter way to
+            learn the basics.
           </p>
         </div>
       </section>
@@ -319,24 +323,24 @@ export default function Content() {
           <p className="eyebrow">After the bootcamp</p>
           <h2 className="section-title" id="careers">Careers in UI/UX design</h2>
           <p>
-            The bootcamp prepares you to apply for roles such as <strong>junior UX/UI designer</strong>,{' '}
+            The bootcamp prepares you to apply for entry-level roles such as <strong>junior UX/UI designer</strong>,{' '}
             <strong>product designer</strong>, <strong>UX researcher</strong>, <strong>web or mobile UI designer</strong>{' '}
             and <strong>freelance designer</strong>. Some learners use UX skills to grow in their current roles — in
             marketing, product management or customer experience.
           </p>
           <p>
-            Design teams exist in digital agencies, startups, banks, telecoms and e-commerce companies in Morocco, and
-            many designers work remotely with international clients. Our guide to{' '}
-            <Link href="/blog/remote-developer-jobs-from-morocco/">remote tech jobs from Morocco</Link> explains how to
-            approach that market, and{' '}
-            <Link href="/blog/coding-bootcamp-vs-university-morocco/">bootcamp vs university in Morocco</Link> helps you
-            compare learning routes. Pay varies widely by company, city and the strength of your portfolio, so treat
-            online salary figures as rough indications only.
+            Design teams exist in digital agencies, startups, in-house product teams, public-sector digital services and
+            e-commerce companies across {site.marketsLabel}, and many designers work for remote-first companies. Our{' '}
+            <Link href="/blog/remote-developer-jobs-guide/">guide to remote tech jobs</Link> explains how to approach
+            that market, and{' '}
+            <Link href="/blog/coding-bootcamp-vs-university-degree/">bootcamp vs university degree</Link> helps you
+            compare learning routes. Pay varies widely by country, company, city and the strength of your portfolio, so
+            treat online salary figures as rough indications only.
           </p>
           <p>
             We cannot guarantee a job, and we do not publish invented placement numbers. We do support you through{' '}
             <Link href="/career-services/">Atlas Code career services</Link>: portfolio and case-study reviews, CV and
-            LinkedIn feedback, mock design interviews and guidance on presenting your work.
+            LinkedIn feedback, mock design interviews over video and guidance on presenting your work.
           </p>
         </div>
       </section>
@@ -346,8 +350,8 @@ export default function Content() {
           <p className="eyebrow">Investment</p>
           <h2 className="section-title" id="tuition">Tuition and next steps</h2>
           <p className="section-intro">
-            Tuition for the UI/UX Design bootcamp is <strong>{p.priceLabel}</strong>. A deposit of {site.deposit} secures
-            your seat after admission.
+            Tuition for the online UI/UX Design bootcamp is <strong>{p.priceLabel}</strong>. A deposit of{' '}
+            {site.deposit} secures your seat after admission.
           </p>
           <div className="grid grid-3">
             <article className="card">
@@ -357,19 +361,20 @@ export default function Content() {
             </article>
             <article className="card">
               <h3>2. Apply</h3>
-              <p>A short application, a conversation and a design-thinking exercise.</p>
+              <p>A short application, a video call and a design-thinking exercise.</p>
               <Link className="card-link" href="/admissions/">Understand the admissions process</Link>
             </article>
             <article className="card">
               <h3>3. Join a cohort</h3>
-              <p>The next UI/UX Design cohort starts {p.nextStart}.</p>
+              <p>The next UI/UX Design cohort starts {p.nextStart}, with UK and US Eastern time options.</p>
               <Link className="card-link" href="/upcoming-cohorts/">View upcoming cohort dates</Link>
             </article>
           </div>
           <p>
-            Curious about the learning environment? Visit the <Link href="/campus/">Atlas Code campus in Agadir</Link>, or
-            compare with the <Link href="/programs/data-analytics/">Data Analytics bootcamp</Link> if dashboards and
-            numbers appeal to you too.
+            Curious about the learning environment? Explore our{' '}
+            <Link href="/online-learning/">online learning experience</Link>, or compare with the{' '}
+            <Link href="/programs/data-analytics/">online Data Analytics bootcamp</Link> if dashboards and numbers appeal
+            to you too.
           </p>
         </div>
       </section>
@@ -386,15 +391,19 @@ export default function Content() {
               },
               {
                 q: 'What is the difference between UX and UI?',
-                a: 'UX (user experience) covers research, structure and how a product works for people. UI (user interface) covers how it looks and feels on screen. Junior roles in Morocco often combine both, so the bootcamp teaches both.',
+                a: 'UX (user experience) covers research, structure and how a product works for people. UI (user interface) covers how it looks and feels on screen. Many junior roles combine both, so the bootcamp teaches both.',
               },
               {
                 q: 'Will I learn to code?',
-                a: 'No coding is required. You will learn enough about how the web works to hand off designs well. To learn coding properly, consider the full-stack web development bootcamp.',
+                a: 'No coding is required. You will learn enough about how the web works to hand off designs well. To learn coding properly, consider the online full-stack web development bootcamp.',
               },
               {
-                q: 'Why is there a module on Arabic and RTL interfaces?',
-                a: 'Many Moroccan products need to work in Arabic and French, and sometimes Tamazight or English too. Right-to-left layouts involve mirroring, typography and content choices that many international courses skip.',
+                q: 'How do you run user research and design critiques online?',
+                a: 'Interviews and usability tests run over video calls with screen sharing, synthesis happens on a shared online whiteboard, and critiques take place live with everyone viewing the same Figma file. These are the same remote methods many product teams use day to day.',
+              },
+              {
+                q: 'Which time zones do classes run in, and do I need to be in the UK, the US or Canada?',
+                a: `Each cohort runs live in either ${site.timezones.uk} or ${site.timezones.na}. The program is designed for learners in the UK, the US and Canada, but you can join from elsewhere if you can attend at your cohort times. Having the right to work where you apply for jobs is your responsibility; we cannot sponsor visas.`,
               },
               {
                 q: 'Is Figma free?',
@@ -413,7 +422,7 @@ export default function Content() {
         <div className="container">
           <h2>Design products people love to use</h2>
           <p>
-            The next UI/UX Design cohort starts {p.nextStart} in Agadir. Apply now or talk to an advisor about your
+            The next online UI/UX Design cohort starts {p.nextStart}. Apply now or talk to an advisor about your
             portfolio goals.
           </p>
           <Link className="btn btn-primary" href="/apply/">Apply now</Link>{' '}

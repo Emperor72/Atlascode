@@ -2,7 +2,7 @@
   "name": "atlascode-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Atlas Code: coding bootcamp in Agadir. SEO-optimized Next.js + TypeScript website.",
+  "description": "Atlas Code: live online coding bootcamp (UK, US, Canada). SEO-optimized Next.js + TypeScript website.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

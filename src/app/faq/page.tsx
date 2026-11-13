@@ -20,8 +20,8 @@ const groups: { id: string; title: string; items: FaqItem[] }[] = [
         a: 'A coding bootcamp is a short, intensive training program, usually 8 to 24 weeks, that teaches the practical skills needed for an entry-level tech job through projects rather than theory-heavy courses.',
       },
       {
-        q: 'Where is Atlas Code located?',
-        a: `Atlas Code is located in ${site.address.city}, in the Souss-Massa region of Morocco. All bootcamps are taught in person on our campus.`,
+        q: 'Who can join Atlas Code?',
+        a: `Atlas Code is a live online bootcamp built for learners in ${site.marketsLabel}. Anyone who can attend live sessions in ${site.timezones.uk} or ${site.timezones.na} can join.`,
       },
       {
         q: 'Which programs does Atlas Code offer?',
@@ -29,11 +29,15 @@ const groups: { id: string; title: string; items: FaqItem[] }[] = [
       },
       {
         q: 'Are classes online or in person?',
-        a: 'Classes take place in person on our Agadir campus. The part-time program can include some online sessions, and all learners get access to online resources and recordings of key sessions.',
+        a: 'All programs are taught live online. You join scheduled video sessions with your instructor and cohort, pair-program with classmates and get help from teaching assistants in real time. Key sessions are recorded so you can revisit them.',
+      },
+      {
+        q: 'Which time zones do cohorts run in?',
+        a: `Each cohort runs in one time zone: ${site.timezones.uk} for UK and European learners, or ${site.timezones.na} for learners in the US and Canada. Check the upcoming cohorts page for dates.`,
       },
       {
         q: 'What language are classes taught in?',
-        a: 'Classes are taught in English, with French and Darija support from instructors and teaching assistants.',
+        a: 'Classes are taught in English.',
       },
     ],
   },
@@ -54,8 +58,8 @@ const groups: { id: string; title: string; items: FaqItem[] }[] = [
         a: 'No. Many people successfully switch to tech in their thirties, forties and beyond. Previous professional experience is often an advantage.',
       },
       {
-        q: 'What laptop do I need?',
-        a: 'A laptop you can install software on, ideally with 8 GB of RAM or more and an SSD. Windows, macOS and Linux all work.',
+        q: 'What equipment do I need?',
+        a: 'A laptop you can install software on (ideally 8 GB of RAM or more and an SSD; Windows, macOS and Linux all work), a stable broadband connection, a webcam and a headset or earphones with a microphone.',
       },
       {
         q: 'How long does the admissions process take?',
@@ -73,7 +77,7 @@ const groups: { id: string; title: string; items: FaqItem[] }[] = [
       },
       {
         q: 'Can I pay in instalments?',
-        a: `Yes. After a ${site.deposit} deposit, you can spread the remaining tuition over interest-free monthly instalments.`,
+        a: `Yes. After a ${site.deposit} deposit, you can spread the remaining tuition over interest-free monthly instalments. Tuition is priced in US dollars; your bank or card provider converts it if you pay in pounds or Canadian dollars.`,
       },
       {
         q: 'Are there scholarships?',
@@ -116,8 +120,12 @@ const groups: { id: string; title: string; items: FaqItem[] }[] = [
         a: 'Yes. Career services are included: CV and LinkedIn reviews, portfolio coaching, mock interviews and introductions to employers. We do not guarantee a job, but we support you actively during and after the program.',
       },
       {
-        q: 'Can I work remotely for foreign companies after the bootcamp?',
-        a: 'It is possible but competitive for juniors. A strong portfolio, good English and some local experience help a lot. We cover remote job strategies in career services.',
+        q: 'Can I get a remote job after the bootcamp?',
+        a: 'It is possible but competitive for juniors. A strong portfolio, clear written communication and some first experience help a lot. We cover remote job strategies in career services.',
+      },
+      {
+        q: 'Does the bootcamp give me the right to work in the UK, the US or Canada?',
+        a: 'No. Atlas Code is a training provider and does not sponsor visas. Your right to work in a given country depends on your own immigration status.',
       },
       {
         q: 'Can I become a freelancer?',

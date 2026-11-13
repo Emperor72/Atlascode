@@ -5,7 +5,7 @@ import { CorePage, coreMetadata } from '@/components/CorePage';
 const PATH = '/terms/';
 export const metadata = coreMetadata(PATH);
 
-/* TODO: replace with terms reviewed by a legal professional (refund percentages, company registration details, ICE/RC numbers). */
+/* TODO: replace with terms reviewed by a legal professional (refund percentages, company registration details, consumer rights in the UK, US states and Canadian provinces you sell to). */
 export default function TermsPage() {
   return (
     <CorePage path={PATH}>
@@ -26,7 +26,7 @@ export default function TermsPage() {
           <h2 id="payment">2. Tuition and payment</h2>
           <p>
             Tuition amounts are listed on our <Link href="/tuition-financing/">tuition & financing page</Link> and in your contract. Instalment
-            plans follow the schedule agreed in writing. Late payments may lead to suspension of access to the program after written notice.
+            plans follow the schedule agreed in writing. Prices are stated in US dollars; any currency conversion or bank fees charged by your payment provider are your responsibility. Late payments may lead to suspension of access to the program after written notice.
           </p>
           <h2 id="cancellation">3. Withdrawal, cancellation and refunds</h2>
           <ul>
@@ -44,13 +44,14 @@ export default function TermsPage() {
           </ul>
           <h2 id="conduct">4. Student commitments</h2>
           <p>
-            Students commit to attending sessions, respecting fellow learners and staff, using campus equipment responsibly and submitting
-            original work. Serious or repeated breaches may lead to exclusion.
+            Students commit to attending sessions, respecting fellow learners and staff, keeping a professional attitude in live online sessions (including keeping your camera on when required) and
+            submitting original work. Sharing class recordings or materials outside your cohort is not permitted. Serious or repeated breaches may lead to exclusion.
           </p>
           <h2 id="certificate">5. Certificate</h2>
           <p>
             A certificate of completion is awarded to learners who meet the attendance and project requirements of their program. It is a
-            private training certificate.
+            private training certificate. It is not a university degree and does not confer any right to work or immigration status in any
+            country.
           </p>
           <h2 id="ip">6. Intellectual property</h2>
           <p>
@@ -64,8 +65,9 @@ export default function TermsPage() {
           </p>
           <h2 id="law">8. Applicable law</h2>
           <p>
-            These terms are governed by Moroccan law. Disputes will first be addressed amicably; failing that, the competent courts of{' '}
-            {site.address.city} have jurisdiction.
+            These terms are governed by Moroccan law, where {site.name} is registered. Disputes will first be addressed amicably; failing
+            that, the competent courts of {site.address.city} have jurisdiction. Nothing in these terms limits any mandatory consumer rights
+            you have under the law of the country where you live, such as statutory cancellation rights for online purchases.
           </p>
           <p>
             Questions? <Link href="/contact/">Contact us</Link> or read our <Link href="/privacy-policy/">privacy policy</Link>.

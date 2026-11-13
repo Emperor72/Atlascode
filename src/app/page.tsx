@@ -25,7 +25,7 @@ const reasons = [
   {
     icon: '🧭',
     title: 'A curriculum built for the market',
-    text: 'We teach the stack local agencies, offshoring companies and remote employers actually use, including JavaScript, TypeScript, React, Node.js, SQL, Python, Power BI and Figma, and we update it every cohort.',
+    text: 'We teach the stack agencies, startups, in-house teams and remote-first employers actually use, including JavaScript, TypeScript, React, Node.js, SQL, Python, Power BI and Figma, and we update it every cohort.',
   },
   {
     icon: '🎯',
@@ -33,9 +33,9 @@ const reasons = [
     text: 'CV and LinkedIn workshops, GitHub portfolio reviews, mock technical interviews and introductions to employers are part of every program, not an optional extra.',
   },
   {
-    icon: '🗣',
-    title: 'Taught in English & French',
-    text: 'Classes run in English, the language of code and documentation, with French and Darija support whenever you need it. You also leave confident in tech English.',
+    icon: '🌍',
+    title: 'Live online, in your time zone',
+    text: 'Cohorts run live in UK time or US Eastern Time, so you learn with a real instructor and classmates during hours that fit your life, from anywhere.',
   },
   {
     icon: '🕒',
@@ -52,7 +52,7 @@ const steps = [
   },
   {
     title: 'Talk with an advisor',
-    text: 'A 30-minute call or campus visit to confirm the right program and schedule for you.',
+    text: 'A 30-minute video call to confirm the right program, schedule and time zone for you.',
     link: ['/admissions/', 'How admissions work'],
   },
   {
@@ -73,16 +73,16 @@ const faqs = [
     a: 'No. Our full-time and part-time bootcamps start from the fundamentals. You need motivation, basic computer skills and the time to complete the free pre-course work. If you want to try coding first, our Intro to Coding weekend workshop is designed for complete beginners.',
   },
   {
-    q: 'Where is Atlas Code located?',
-    a: `Our campus is in ${site.address.city}, in the Souss-Massa region of Morocco. Learners join us from Agadir, Inezgane, Aït Melloul, Taroudant, Tiznit and other cities. You can visit the campus by booking a slot with an advisor.`,
+    q: 'Is Atlas Code online or in person?',
+    a: `Atlas Code is fully online and taught live. Cohorts run in ${site.timezones.uk} for learners in the UK and Europe, or in ${site.timezones.na} for learners in the US and Canada. You join scheduled video classes, pair-program with classmates and get real-time help from teaching assistants.`,
   },
   {
-    q: 'How much does a coding bootcamp in Agadir cost?',
+    q: 'How much does an online coding bootcamp cost?',
     a: `Tuition at Atlas Code ranges from ${site.programs.uxui.priceLabel} for UI/UX Design to ${site.programs.fullstack.priceLabel} for Full-Stack Web Development. Interest-free payment plans, early-bird discounts and need-based scholarships are available.`,
   },
   {
     q: 'In which language are classes taught?',
-    a: 'Classes are taught in English, with French and Darija support from instructors and teaching assistants. You do not need perfect English. Your technical English improves quickly because you use it every day.',
+    a: 'All classes are taught in English. You do not need to be a native speaker, but you should be comfortable following live sessions and discussing your code in English.',
   },
   {
     q: 'Will Atlas Code help me find a job?',
@@ -101,45 +101,74 @@ export default function HomePage() {
       <JsonLd data={webPageSchema({ path: '/', title: page.title, description: page.description, crumbs: [{ name: 'Home', path: '/' }] })} />
 
       <section className="home-hero">
-        <div className="container">
-          <p className="eyebrow">Coding bootcamp · Agadir, Morocco</p>
-          <h1>
-            Become a web developer, data analyst or designer, <em>right here in Agadir</em>
-          </h1>
-          <p className="lead">
-            {site.name} is the coding bootcamp in Agadir for people who want a real career in tech. Intensive, project-based programs, small
-            cohorts, instructors who work in the industry, and career support until you land your first role.
-          </p>
-          <div className="hero-actions">
-            <Link className="btn btn-primary" href="/programs/">
-              Explore programs
-            </Link>
-            <Link className="btn btn-ghost" href="/apply/">
-              Apply in 5 minutes
-            </Link>
+        <div className="hero-floor" aria-hidden="true" />
+        <div className="container hero-grid">
+          <div>
+            <p className="eyebrow">Live online coding bootcamp · UK · US · Canada</p>
+            <h1>
+              Become a web developer, data analyst or designer, <em>live online, from anywhere</em>
+            </h1>
+            <p className="lead">
+              {site.name} is a live online coding bootcamp for people in {site.marketsLabel} who want a real career in tech. Intensive,
+              project-based programs, small cohorts, instructors who work in the industry, and career support until you land your first
+              role.
+            </p>
+            <div className="hero-actions">
+              <Link className="btn btn-primary" href="/programs/">
+                Explore programs
+              </Link>
+              <Link className="btn btn-ghost" href="/apply/">
+                Apply in 5 minutes
+              </Link>
+            </div>
+            <ul className="hero-points">
+              <li>No coding experience required</li>
+              <li>UK &amp; US Eastern time cohorts</li>
+              <li>Interest-free payment plans</li>
+              <li>Next start: {site.programs.fullstack.nextStart}</li>
+            </ul>
           </div>
-          <ul className="hero-points">
-            <li>No coding experience required</li>
-            <li>Full-time & part-time formats</li>
-            <li>Interest-free payment plans</li>
-            <li>Next start: {site.programs.fullstack.nextStart}</li>
-          </ul>
+          <div className="scene" aria-hidden="true">
+            <div className="scene-inner">
+              <div className="orbit" />
+              <div className="globe">
+                {Array.from({ length: 9 }, (_, i) => (
+                  <span key={i} />
+                ))}
+              </div>
+              <div className="float-card float-code">
+                <span className="k">const</span> career = <span className="f">build</span>(<span className="s">&apos;portfolio&apos;</span>);
+                <br />
+                <span className="k">await</span> career.<span className="f">ship</span>();
+              </div>
+              <div className="float-card float-uk">
+                <span className="dot" />
+                Live now
+                <strong>London · 09:00 GMT</strong>
+              </div>
+              <div className="float-card float-us">
+                <span className="dot" />
+                Live cohort
+                <strong>New York · 09:00 ET</strong>
+              </div>
+              <div className="float-card float-ship">
+                <strong>✓ Project deployed</strong>
+                Code review passed
+              </div>
+            </div>
+          </div>
         </div>
-        <svg className="hero-mountains" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M0 120V78l120-34 110 40 160-62 140 54 120-30 170 48 150-70 160 60 110-26 100 30v32Z" fill="#e8743b" opacity=".35" />
-          <path d="M0 120V96l160-28 140 30 180-44 160 40 200-36 180 34 170-30 250 38v20Z" fill="#fff" />
-        </svg>
       </section>
 
       <section className="section" aria-labelledby="programs-title">
         <div className="container">
           <p className="eyebrow">Our programs</p>
           <h2 className="section-title" id="programs-title">
-            Five ways to start your tech career in Agadir
+            Five ways to start your tech career online
           </h2>
           <p className="section-intro">
             Whether you want to build web applications, turn data into decisions or design digital products, there is a program built for
-            you. All are taught on our Agadir campus and end with a portfolio of real projects.
+            you. All are taught live online and end with a portfolio of real projects.
           </p>
           <div className="grid grid-3">
             {programs.map(({ meta }) => {
@@ -202,13 +231,13 @@ export default function HomePage() {
               <li>A final capstone presented on demo day</li>
             </ul>
             <p>
-              Curious what that looks like in practice? Read our guide on <Link href="/blog/learn-to-code-agadir-guide/">learning to code in Agadir</Link>{' '}
+              Curious what that looks like in practice? Read our <Link href="/blog/online-coding-bootcamp-guide/">guide to online coding bootcamps</Link>{' '}
               or see the <Link href="/programs/full-stack-web-development/">full-stack curriculum week by week</Link>.
             </p>
           </div>
           <div className="table-wrap">
             <table>
-              <caption className="sr-only">A typical full-time bootcamp day</caption>
+              <caption className="sr-only">A typical full-time bootcamp day, in your cohort’s time zone</caption>
               <thead>
                 <tr>
                   <th scope="col">Time</th>
@@ -218,7 +247,7 @@ export default function HomePage() {
               <tbody>
                 <tr>
                   <td>9:00</td>
-                  <td>Stand-up: goals and blockers</td>
+                  <td>Video stand-up: goals and blockers</td>
                 </tr>
                 <tr>
                   <td>9:15</td>
@@ -226,7 +255,7 @@ export default function HomePage() {
                 </tr>
                 <tr>
                   <td>11:00</td>
-                  <td>Pair-programming exercises</td>
+                  <td>Pair programming in breakout rooms</td>
                 </tr>
                 <tr>
                   <td>13:00</td>
@@ -286,7 +315,7 @@ export default function HomePage() {
               <p>
                 Your degree gave you theory; employers ask for projects. In a few months you can build the practical portfolio that gets
                 interviews. See how a bootcamp compares in our{' '}
-                <Link href="/blog/coding-bootcamp-vs-university-morocco/">bootcamp vs university guide</Link>.
+                <Link href="/blog/coding-bootcamp-vs-university-degree/">bootcamp vs degree guide</Link>.
               </p>
             </article>
             <article className="card">
@@ -299,8 +328,8 @@ export default function HomePage() {
             <article className="card">
               <h3>Freelancers and entrepreneurs</h3>
               <p>
-                Build your own product, automate your business or offer development services to clients in Morocco and abroad. Our guide to{' '}
-                <Link href="/blog/remote-developer-jobs-from-morocco/">remote developer work from Morocco</Link> covers the practical side.
+                Build your own product, automate your business or offer development services to clients anywhere. Our guide to{' '}
+                <Link href="/blog/remote-developer-jobs-guide/">remote developer jobs</Link> covers the practical side.
               </p>
             </article>
             <article className="card">
@@ -314,33 +343,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section dark" aria-labelledby="campus-title">
+      <section className="section dark" aria-labelledby="how-title">
         <div className="container split">
           <div>
-            <p className="eyebrow">Our campus</p>
-            <h2 className="section-title" id="campus-title">
-              Learn to code by the Atlantic
+            <p className="eyebrow">How it works</p>
+            <h2 className="section-title" id="how-title">
+              A real classroom, delivered live to your laptop
             </h2>
             <p>
-              Agadir is one of Morocco’s most liveable cities: sunshine most of the year, an affordable cost of living, a growing startup
-              and digital scene, and easy connections to the rest of the Souss-Massa region. Our campus gives you a focused place to learn,
-              with fast internet, project rooms and space to stay late when your project needs it.
+              No commute and no relocation, but none of the isolation of self-paced courses either. You learn in a live cohort with the same
+              instructors, classmates and teaching assistants every day, using the tools remote tech teams use: video calls, shared
+              repositories, pull requests and team chat.
             </p>
             <div className="hero-actions">
-              <Link className="btn btn-primary" href="/campus/">
-                Discover the campus
+              <Link className="btn btn-primary" href="/online-learning/">
+                How online learning works
               </Link>
-              <Link className="btn btn-ghost" style={{ color: '#fff' }} href="/blog/tech-jobs-agadir-souss-massa/">
-                Tech jobs in Souss-Massa
+              <Link className="btn btn-ghost" style={{ color: '#fff' }} href="/blog/junior-tech-jobs-uk-us-canada/">
+                Junior tech jobs in the UK, US &amp; Canada
               </Link>
             </div>
           </div>
           <ul className="checklist">
-            <li>Central location in {site.address.city}, reachable by bus and taxi</li>
-            <li>High-speed fibre internet and Wi-Fi</li>
-            <li>Classrooms, project rooms and quiet zones</li>
-            <li>Kitchen and lounge for breaks and meetups</li>
-            <li>Evening talks and community events</li>
+            <li>Live classes in {site.timezones.uk} or {site.timezones.na}</li>
+            <li>Remote pair programming and team projects</li>
+            <li>Teaching assistants on call during project time</li>
+            <li>Recordings of key sessions</li>
+            <li>Online demo day, guest talks and alumni community</li>
           </ul>
         </div>
       </section>
@@ -352,8 +381,8 @@ export default function HomePage() {
             Where an Atlas Code program can take you
           </h2>
           <p className="section-intro">
-            Graduates prepare for entry-level roles in agencies, startups, offshoring and nearshoring companies, in-house IT teams and
-            remote-first companies, or for freelance work. Our <Link href="/career-services/">career services team</Link> helps you aim
+            Graduates prepare for entry-level roles in agencies, startups, scale-ups, consultancies, in-house tech teams and remote-first
+            companies across the UK, the US and Canada, or for freelance work. Our <Link href="/career-services/">career services team</Link> helps you aim
             at the right roles.
           </p>
           <div className="grid grid-4">
@@ -383,7 +412,7 @@ export default function HomePage() {
         <div className="container narrow">
           <p className="eyebrow">FAQ</p>
           <h2 className="section-title" id="faq-title">
-            Questions about our coding bootcamp in Agadir
+            Questions about our online coding bootcamp
           </h2>
           <Faq items={faqs} />
           <p>
@@ -396,7 +425,7 @@ export default function HomePage() {
         <div className="container">
           <p className="eyebrow">From the blog</p>
           <h2 className="section-title" id="blog-title">
-            Guides for your tech career in Morocco
+            Guides for starting your tech career
           </h2>
           <div className="grid grid-3">
             {posts.slice(0, 3).map((p) => (

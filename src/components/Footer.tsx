@@ -28,7 +28,7 @@ const columns: { title: string; links: [string, string][] }[] = [
     title: 'Atlas Code',
     links: [
       ['/about/', 'About Us'],
-      ['/campus/', 'Our Agadir Campus'],
+      ['/online-learning/', 'How Online Learning Works'],
       ['/career-services/', 'Career Services'],
       ['/hiring-partners/', 'Hire Our Graduates'],
       ['/blog/', 'Blog'],
@@ -38,10 +38,10 @@ const columns: { title: string; links: [string, string][] }[] = [
   {
     title: 'Popular guides',
     links: [
-      ['/blog/learn-to-code-agadir-guide/', 'Learn to Code in Agadir'],
-      ['/blog/how-to-become-web-developer-morocco/', 'Become a Web Developer in Morocco'],
-      ['/blog/coding-bootcamp-vs-university-morocco/', 'Bootcamp vs University'],
-      ['/blog/remote-developer-jobs-from-morocco/', 'Remote Developer Jobs'],
+      ['/blog/online-coding-bootcamp-guide/', 'Online Coding Bootcamp Guide'],
+      ['/blog/how-to-become-web-developer-uk/', 'Become a Web Developer in the UK'],
+      ['/blog/coding-bootcamp-vs-university-degree/', 'Bootcamp vs Degree'],
+      ['/blog/remote-developer-jobs-guide/', 'Remote Developer Jobs'],
     ],
   },
 ];
@@ -59,13 +59,11 @@ export function Footer() {
             </span>
           </Link>
           <p>
-            {site.name} is a coding bootcamp in Agadir, Morocco. We train web developers, data analysts and UI/UX designers through
-            intensive, project-based programs.
+            {site.name} is a live online coding bootcamp for learners in {site.marketsLabel}. We train web developers, data analysts and
+            UI/UX designers through intensive, project-based programs.
           </p>
           <address className="nap">
             <strong>{site.name}</strong>
-            <br />
-            {site.address.street}, {site.address.postalCode} {site.address.city}, Morocco
             <br />
             <a href={`tel:${site.phoneHref}`}>{site.phone}</a> · <a href={`mailto:${site.email}`}>{site.email}</a>
             <br />
@@ -99,7 +97,7 @@ export function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>
-            © {new Date().getFullYear()} {site.name}, Coding Bootcamp in Agadir. All rights reserved.
+            © {new Date().getFullYear()} {site.name}, {site.tagline}. All rights reserved.
           </p>
           <ul>
             <li>

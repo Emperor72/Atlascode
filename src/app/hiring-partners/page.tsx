@@ -31,10 +31,10 @@ export default function HiringPartnersPage() {
               </p>
             </article>
             <article className="card">
-              <h3>Local, bilingual talent</h3>
+              <h3>Remote-ready from day one</h3>
               <p>
-                Candidates based in Agadir and Souss-Massa who work in French and English, with lower turnover risk than relocating talent
-                from other cities.
+                Graduates trained live online, in distributed teams, using video calls, pull requests and written async communication, the
+                way most modern tech teams already work.
               </p>
             </article>
             <article className="card">
@@ -47,7 +47,7 @@ export default function HiringPartnersPage() {
             </article>
             <article className="card">
               <h3>Flexible formats</h3>
-              <p>Full-time positions, internships (stages), freelance missions or capstone projects based on your real business needs.</p>
+              <p>Full-time roles, internships, apprenticeships, contract work or capstone projects based on your real business needs.</p>
             </article>
           </div>
         </div>
@@ -57,10 +57,10 @@ export default function HiringPartnersPage() {
           <h2 id="how">How to work with us</h2>
           <ol>
             <li>
-              <strong>Tell us what you need.</strong> Share the role, stack, location (on-site in Agadir, hybrid or remote) and timing.
+              <strong>Tell us what you need.</strong> Share the role, stack, location (on-site, hybrid or remote, and in which country) and timing.
             </li>
             <li>
-              <strong>Meet candidates.</strong> We send matching profiles with portfolios, or invite you to demo day to see projects live.
+              <strong>Meet candidates.</strong> We send matching profiles with portfolios, or invite you to our online demo day to see projects live.
             </li>
             <li>
               <strong>Interview and hire.</strong> You run your process; we help with scheduling and feedback.
@@ -71,7 +71,7 @@ export default function HiringPartnersPage() {
             <li>Give a talk or workshop to current students</li>
             <li>Propose a real-world brief for a capstone project</li>
             <li>Join demo day as a guest reviewer</li>
-            <li>Host a company visit for a cohort</li>
+            <li>Host a virtual office hour or Q&amp;A with a cohort</li>
             <li>
               Upskill your current team through <Link href="/corporate-training/">corporate training</Link>
             </li>
@@ -90,8 +90,8 @@ export default function HiringPartnersPage() {
                 a: 'No. Hiring our graduates is free. There are no placement or recruitment fees.',
               },
               {
-                q: 'Can we offer internships (stages)?',
-                a: 'Yes. Internships are a common first step, especially for graduates finishing their studies. Tell us the duration and conditions and we will share suitable profiles.',
+                q: 'Can we offer internships or apprenticeships?',
+                a: 'Yes. Internships and apprenticeships are a common first step. Tell us the duration, location and conditions and we will share suitable profiles. Candidates must have the right to work in your country.',
               },
               {
                 q: 'What level should we expect from a graduate?',

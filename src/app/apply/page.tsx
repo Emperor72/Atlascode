@@ -51,8 +51,33 @@ export default function ApplyPage() {
             </div>
             <div className="form-row">
               <div className="field">
+                <label htmlFor="a-country">Country</label>
+                <select id="a-country" name="country" autoComplete="country-name" required defaultValue="">
+                  <option value="" disabled>
+                    Select
+                  </option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div className="field">
+                <label htmlFor="a-tz">Preferred cohort time zone</label>
+                <select id="a-tz" name="timezone" defaultValue="">
+                  <option value="" disabled>
+                    Select
+                  </option>
+                  <option>{site.timezones.uk}</option>
+                  <option>{site.timezones.na}</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="field">
                 <label htmlFor="a-city">City</label>
-                <input id="a-city" name="city" autoComplete="address-level2" placeholder="Agadir, Inezgane, Taroudant…" />
+                <input id="a-city" name="city" autoComplete="address-level2" placeholder="London, Manchester, Toronto, New York…" />
               </div>
               <div className="field">
                 <label htmlFor="a-age">Age</label>
@@ -117,7 +142,7 @@ export default function ApplyPage() {
             <div className="consent">
               <label>
                 <input type="checkbox" name="consent" required /> I agree that Atlas Code may process my data to review my application and
-                contact me, in line with Law 09-08 and the privacy policy.
+                contact me, as described in the privacy policy.
               </label>
             </div>
             <button className="btn btn-primary" type="submit">
@@ -130,7 +155,7 @@ export default function ApplyPage() {
               <h2 className="h4">What happens next?</h2>
               <ol>
                 <li>An advisor contacts you within two working days</li>
-                <li>A 30-minute conversation about your goals</li>
+                <li>A 30-minute video call about your goals</li>
                 <li>A short admissions challenge</li>
                 <li>Decision within 48 hours</li>
               </ol>

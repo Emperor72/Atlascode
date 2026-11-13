@@ -7,27 +7,27 @@ const p = site.programs.data;
 
 export const meta: ProgramMeta = {
   slug: 'data-analytics',
-  title: 'Data Analytics Bootcamp in Agadir: SQL, Python | Atlas Code',
+  title: 'Online Data Analytics Bootcamp: SQL & Python | Atlas Code',
   description:
-    'Become a data analyst in 10 weeks at our Agadir bootcamp: Excel, statistics, SQL, Python, Power BI and a capstone on real-world Souss-Massa style data.',
-  h1: 'Data Analytics Bootcamp',
-  lead: 'Ten full-time weeks on our Agadir campus to learn how to clean, analyse and visualise data with Excel, SQL, Python and Power BI — and to turn numbers into decisions people actually act on.',
+    'Become a data analyst in 10 weeks with our live online bootcamp for the UK, US and Canada: Excel, statistics, SQL, Python, Power BI and a real-world capstone.',
+  h1: 'Online Data Analytics Bootcamp',
+  lead: 'Ten full-time weeks of live online classes to learn how to clean, analyse and visualise data with Excel, SQL, Python and Power BI — and to turn numbers into decisions people actually act on.',
   crumb: 'Data Analytics',
   summary:
-    'Learn Excel, statistics, SQL, Python and Power BI in 10 full-time weeks, and finish with a capstone on tourism, agritech or retail data.',
-  badge: 'Full-time · 10 weeks',
+    'Learn Excel, statistics, SQL, Python and Power BI in 10 full-time weeks of live online classes, and finish with a capstone on e-commerce, public-sector or retail data.',
+  badge: 'Full-time · 10 weeks · Online',
   related: [
     '/programs/full-stack-web-development/',
     '/tuition-financing/',
     '/blog/javascript-vs-python-beginners/',
-    '/blog/tech-jobs-agadir-souss-massa/',
+    '/blog/junior-tech-jobs-uk-us-canada/',
   ],
   course: {
-    name: 'Data Analytics Bootcamp',
+    name: 'Online Data Analytics Bootcamp',
     price: p.price,
     hours: 400,
     weeks: 10,
-    mode: 'Onsite',
+    mode: 'Online',
   },
 };
 
@@ -40,9 +40,9 @@ export default function Content() {
           <h2 className="section-title" id="key-facts">Key facts</h2>
           <dl className="key-facts">
             <div><dt>Duration</dt><dd>10 weeks, full-time (about 400 hours)</dd></div>
-            <div><dt>Schedule</dt><dd>Monday to Friday, 9:00–17:30</dd></div>
-            <div><dt>Format</dt><dd>Onsite, on our campus in {site.address.city}</dd></div>
-            <div><dt>Language of instruction</dt><dd>English &amp; French, with Darija support</dd></div>
+            <div><dt>Schedule</dt><dd>Monday to Friday, 9:00–17:30 in your cohort’s time zone</dd></div>
+            <div><dt>Format</dt><dd>Live online, in {site.timezones.uk} or {site.timezones.na}</dd></div>
+            <div><dt>Language of instruction</dt><dd>English</dd></div>
             <div><dt>Tuition</dt><dd>{p.priceLabel}</dd></div>
             <div><dt>Next start</dt><dd>{p.nextStart}</dd></div>
           </dl>
@@ -68,22 +68,22 @@ export default function Content() {
           <p className="eyebrow">Is it right for you?</p>
           <h2 className="section-title" id="who">Who this bootcamp is for</h2>
           <p className="section-intro">
-            Every organisation in Souss-Massa collects data — hotel bookings, harvest yields, export shipments, store
-            sales — but few have people who can turn it into clear answers. This data analytics bootcamp in Agadir
-            trains you to be that person.
+            Almost every organisation collects data — online orders, customer support tickets, shipments, store sales —
+            but few have enough people who can turn it into clear answers. This online data analytics bootcamp trains
+            learners in {site.marketsLabel} to be that person.
           </p>
           <div className="grid grid-3">
             <article className="card">
               <h3>Graduates in business, economics or science</h3>
               <p>
-                You studied management, finance, statistics, agronomy or engineering and you want practical tools — SQL,
-                Python, Power BI — that make your degree far more employable.
+                You studied management, finance, statistics, social science or engineering and you want practical tools
+                — SQL, Python, Power BI — that make your degree far more employable.
               </p>
             </article>
             <article className="card">
               <h3>Professionals who live in spreadsheets</h3>
               <p>
-                You already build reports in Excel for a hotel, a cooperative, a logistics company or a retailer. You
+                You already build reports in Excel for a retailer, a charity, a logistics company or a public body. You
                 want to automate the boring parts, handle bigger datasets and produce dashboards your managers trust.
               </p>
             </article>
@@ -104,18 +104,18 @@ export default function Content() {
             </li>
             <li>Basic spreadsheet use (entering data, simple formulas). Advanced Excel is taught in week 1.</li>
             <li>
-              A laptop able to run Python, a database client and Power BI Desktop. Power BI Desktop runs on Windows; tell
-              us if you use a Mac and we will help you plan.
+              A laptop able to run Python, a database client and Power BI Desktop, plus a reliable broadband connection, a
+              webcam and a headset. Power BI Desktop runs on Windows; tell us if you use a Mac and we will help you plan.
             </li>
             <li>
-              Reading English or French documentation, and completing our{' '}
-              <Link href="/admissions/">admissions process</Link>, which includes a short logic and numeracy exercise.
+              Reading English documentation, and completing our <Link href="/admissions/">admissions process</Link>,
+              which includes a video call and a short logic and numeracy exercise.
             </li>
           </ul>
           <p>
             Never written a line of code and a little nervous about it? The{' '}
-            <Link href="/programs/intro-to-coding/">Intro to Coding weekend workshop</Link> is a low-pressure way to
-            discover how programming feels before you commit.
+            <Link href="/programs/intro-to-coding/">Intro to Coding online weekend workshop</Link> is a low-pressure way
+            to discover how programming feels before you commit.
           </p>
         </div>
       </section>
@@ -141,13 +141,13 @@ export default function Content() {
             <li>Use Python with pandas to load, clean, reshape and analyse data reproducibly in notebooks.</li>
             <li>Create clear charts with matplotlib and choose the right visual for each question.</li>
             <li>
-              Handle missing values, duplicates, inconsistent dates, mixed languages and other real data-quality
-              problems.
+              Handle missing values, duplicates, inconsistent dates and currencies, free-text fields and other real
+              data-quality problems.
             </li>
             <li>Model data and build interactive Power BI dashboards with DAX measures and filters.</li>
             <li>
               Present findings as a story with a clear recommendation, adapted to a manager, a client or a technical
-              team.
+              team — including over a video call.
             </li>
             <li>Document your work on GitHub so others can review and reproduce it.</li>
           </ul>
@@ -194,8 +194,8 @@ export default function Content() {
             <li>
               <h3>Week 7 · Data cleaning in practice</h3>
               <p>
-                Missing values, outliers, duplicates, date and currency formats, inconsistent spellings in French and
-                Arabic transliteration, and documenting every cleaning decision.
+                Missing values, outliers, duplicates, date formats (UK versus US), multiple currencies, inconsistent
+                spellings and free-text categories, and documenting every cleaning decision.
               </p>
             </li>
             <li>
@@ -215,8 +215,8 @@ export default function Content() {
             <li>
               <h3>Week 10 · Capstone and presentation</h3>
               <p>
-                You complete an end-to-end analysis on a real-world-style dataset — tourism, agritech or retail — and
-                present your findings and dashboard to a panel.
+                You complete an end-to-end analysis on a real-world-style dataset — e-commerce, public services or retail
+                — and present your findings and dashboard live online to a panel.
               </p>
             </li>
           </ol>
@@ -228,7 +228,8 @@ export default function Content() {
           <p className="eyebrow">Daily rhythm</p>
           <h2 className="section-title" id="typical-day">A typical day</h2>
           <p className="section-intro">
-            Short theory, lots of practice on real-looking data, and a daily habit of explaining what you found.
+            Short theory, lots of practice on real-looking data, and a daily habit of explaining what you found. Times
+            are in your cohort’s time zone ({site.timezones.uk} or {site.timezones.na}).
           </p>
           <div className="table-wrap">
             <table>
@@ -236,12 +237,12 @@ export default function Content() {
                 <tr><th scope="col">Time</th><th scope="col">Activity</th></tr>
               </thead>
               <tbody>
-                <tr><td>9:00–9:30</td><td>Stand-up and a quick SQL or statistics warm-up question.</td></tr>
-                <tr><td>9:30–11:00</td><td>Live lesson: new concept or tool, demonstrated on a dataset.</td></tr>
-                <tr><td>11:00–12:30</td><td>Guided exercises in pairs with instructor support.</td></tr>
+                <tr><td>9:00–9:30</td><td>Video stand-up and a quick SQL or statistics warm-up question.</td></tr>
+                <tr><td>9:30–11:00</td><td>Live lesson: new concept or tool, demonstrated on a dataset via screen share.</td></tr>
+                <tr><td>11:00–12:30</td><td>Guided exercises in pairs in breakout rooms, with instructor and TA support.</td></tr>
                 <tr><td>12:30–13:30</td><td>Lunch break.</td></tr>
-                <tr><td>13:30–16:30</td><td>Case study: answer a business question end to end with the day’s tools.</td></tr>
-                <tr><td>16:30–17:30</td><td>Mini-presentations: two or three learners share their findings and receive feedback.</td></tr>
+                <tr><td>13:30–16:30</td><td>Case study: answer a business question end to end with the day’s tools, with 1:1 help on request.</td></tr>
+                <tr><td>16:30–17:30</td><td>Mini-presentations: two or three learners share their findings on screen and receive feedback.</td></tr>
               </tbody>
             </table>
           </div>
@@ -249,7 +250,9 @@ export default function Content() {
             <p>
               <strong>Why present every day?</strong> In a real job, an analysis nobody understands has no impact.
               Explaining a chart in two minutes to classmates who do not know your dataset is the fastest way to build
-              the communication skills that interviewers test for — in English, in French, or in both.
+              the communication skills that interviewers test for — and in remote and hybrid teams, much of that
+              presenting happens on video, just like here. Lessons are recorded, and our{' '}
+              <Link href="/online-learning/">online learning page</Link> explains how the virtual classroom works.
             </p>
           </div>
         </div>
@@ -265,17 +268,17 @@ export default function Content() {
           </p>
           <div className="grid grid-2">
             <article className="card">
-              <h3>Tourism demand analysis</h3>
+              <h3>E-commerce customer analysis</h3>
               <p>
-                Explore seasonality, length of stay and visitor origins in hotel-style booking data, and recommend pricing
-                or marketing actions for a coastal destination like Agadir.
+                Explore order history, repeat purchases and seasonality in online-shop-style data, and recommend
+                retention or marketing actions with a clear expected impact.
               </p>
             </article>
             <article className="card">
-              <h3>Agritech yield and export report</h3>
+              <h3>Public open data report</h3>
               <p>
-                Combine production, weather and export-style data to analyse crop performance — a theme close to the
-                agricultural economy of the Souss plain.
+                Combine open datasets — for example transport, housing or health service figures — to answer a question a
+                local authority or journalist might ask, with every assumption documented.
               </p>
             </article>
             <article className="card">
@@ -326,27 +329,29 @@ export default function Content() {
           <p className="eyebrow">After the bootcamp</p>
           <h2 className="section-title" id="careers">Careers in data analytics</h2>
           <p>
-            The bootcamp prepares you to apply for roles such as <strong>junior data analyst</strong>,{' '}
+            The bootcamp prepares you to apply for entry-level roles such as <strong>junior data analyst</strong>,{' '}
             <strong>business intelligence (BI) analyst</strong>, <strong>reporting analyst</strong>,{' '}
             <strong>junior business analyst</strong> or <strong>marketing and sales analyst</strong>. Many learners also
             become the “data person” within their current team, which can be a powerful career move in itself.
           </p>
           <p>
-            Analysts are useful in almost every sector — banking, insurance, retail, logistics, tourism, agri-food and
-            offshoring — in Agadir, in larger cities like Casablanca and Rabat, and increasingly in remote roles. Our
-            article on <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and Souss-Massa</Link> gives
-            an overview of the regional market, and{' '}
-            <Link href="/blog/remote-developer-jobs-from-morocco/">remote tech jobs from Morocco</Link> covers working
-            for clients abroad. Salaries depend heavily on sector, city and experience; treat any figures you find online
-            as general, approximate market indications.
+            Analysts are useful in almost every sector — finance, insurance, retail, e-commerce, logistics, healthcare
+            and the public sector — across {site.marketsLabel}, in agencies, startups, in-house teams and remote-first
+            companies. Our article on{' '}
+            <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link> gives an
+            overview of entry-level hiring, and our{' '}
+            <Link href="/blog/remote-developer-jobs-guide/">guide to remote tech jobs</Link> covers working for distributed
+            teams. Salaries depend heavily on country, sector, city and experience; treat any figures you find online as
+            general, approximate market indications.
           </p>
           <p>
             We do not promise jobs or publish invented placement statistics. What we offer is practical help through{' '}
             <Link href="/career-services/">Atlas Code career services</Link>: CV and LinkedIn reviews, portfolio feedback
-            on your analyses and dashboards, mock interviews including SQL exercises, and job-search coaching. If you
-            discover you enjoy building applications more than analysing data, our{' '}
-            <Link href="/programs/full-stack-web-development/">full-stack web development bootcamp</Link> is the natural
-            next step, and designers-at-heart can look at the <Link href="/programs/ui-ux-design/">UI/UX Design bootcamp</Link>.
+            on your analyses and dashboards, mock interviews over video including SQL exercises, and job-search coaching.
+            If you discover you enjoy building applications more than analysing data, our{' '}
+            <Link href="/programs/full-stack-web-development/">online full-stack web development bootcamp</Link> is the
+            natural next step, and designers-at-heart can look at the{' '}
+            <Link href="/programs/ui-ux-design/">online UI/UX Design bootcamp</Link>.
           </p>
         </div>
       </section>
@@ -356,8 +361,8 @@ export default function Content() {
           <p className="eyebrow">Investment</p>
           <h2 className="section-title" id="tuition">Tuition and next steps</h2>
           <p className="section-intro">
-            Tuition for the Data Analytics bootcamp is <strong>{p.priceLabel}</strong>. A deposit of {site.deposit}{' '}
-            confirms your seat after admission.
+            Tuition for the online Data Analytics bootcamp is <strong>{p.priceLabel}</strong>. A deposit of{' '}
+            {site.deposit} confirms your seat after admission.
           </p>
           <div className="grid grid-3">
             <article className="card">
@@ -367,18 +372,19 @@ export default function Content() {
             </article>
             <article className="card">
               <h3>2. Apply</h3>
-              <p>A short application, a conversation and a numeracy and logic exercise.</p>
+              <p>A short application, a video call and a numeracy and logic exercise.</p>
               <Link className="card-link" href="/admissions/">Learn about admissions</Link>
             </article>
             <article className="card">
               <h3>3. Choose your start date</h3>
-              <p>The next Data Analytics cohort starts {p.nextStart}.</p>
+              <p>The next Data Analytics cohort starts {p.nextStart}, with UK and US Eastern time options.</p>
               <Link className="card-link" href="/upcoming-cohorts/">View upcoming cohorts</Link>
             </article>
           </div>
           <p>
-            Want to see the classrooms first? Discover the <Link href="/campus/">Atlas Code campus in Agadir</Link>, or
-            compare all our <Link href="/programs/">tech training programs</Link>.
+            Want to see how live online classes work first? Explore our{' '}
+            <Link href="/online-learning/">online learning experience</Link>, or compare all our{' '}
+            <Link href="/programs/">online tech programs</Link>.
           </p>
         </div>
       </section>
@@ -391,7 +397,7 @@ export default function Content() {
             items={[
               {
                 q: 'Do I need to know how to code?',
-                a: 'No. SQL and Python are taught from the basics. If you would like a gentle first contact with programming, the Intro to Coding weekend workshop is a good warm-up.',
+                a: 'No. SQL and Python are taught from the basics. If you would like a gentle first contact with programming, the Intro to Coding online weekend workshop is a good warm-up.',
               },
               {
                 q: 'How much maths is involved?',
@@ -402,22 +408,26 @@ export default function Content() {
                 a: 'No. Data analytics focuses on answering business questions with SQL, Python, statistics and dashboards. Machine learning is introduced only as context. It is a solid foundation if you later want to study data science.',
               },
               {
-                q: 'Can I use Power BI on a Mac?',
-                a: 'Power BI Desktop is a Windows application. Mac users can usually work through a Windows virtual machine or a campus workstation; we will help you find a solution during admissions.',
+                q: 'Which time zones do the live classes run in?',
+                a: `Each cohort runs on one schedule, either ${site.timezones.uk} or ${site.timezones.na}, Monday to Friday from 9:00 to 17:30. Pick the cohort that matches where you live; lessons are recorded if you need to review them later.`,
               },
               {
-                q: 'Are the capstone datasets real company data?',
-                a: 'We use public open data and realistic simulated datasets inspired by tourism, agritech and retail in Souss-Massa. They are designed to feel real — messy, incomplete, multilingual — without exposing anyone’s confidential information.',
+                q: 'Can I use Power BI on a Mac?',
+                a: 'Power BI Desktop is a Windows application. Mac users can usually work through a Windows virtual machine or a cloud-hosted Windows desktop; we will help you find a solution during admissions.',
+              },
+              {
+                q: 'Do I need to be in the UK, the US or Canada?',
+                a: 'The program is designed for learners in the UK, the US and Canada, but you can join from elsewhere if you can attend live sessions at your cohort times. Having the right to work in the country where you apply for jobs is your responsibility; we cannot sponsor visas.',
               },
               {
                 q: 'Is there a part-time version?',
-                a: 'Data Analytics currently runs full-time. If you need an evening format, our part-time web development program is designed for working learners, and you can ask us about future part-time data cohorts.',
+                a: 'Data Analytics currently runs full-time. If you need an evening format, our part-time online web development program is designed for working learners, and you can ask us about future part-time data cohorts.',
               },
             ]}
           />
           <p>
             Need an evening schedule? See the{' '}
-            <Link href="/programs/part-time-web-development/">part-time web development program</Link>.
+            <Link href="/programs/part-time-web-development/">part-time online web development program</Link>.
           </p>
         </div>
       </section>
@@ -426,7 +436,7 @@ export default function Content() {
         <div className="container">
           <h2>Turn data into decisions</h2>
           <p>
-            The next Data Analytics cohort starts {p.nextStart} in Agadir. Apply now or talk to an advisor about your
+            The next online Data Analytics cohort starts {p.nextStart}. Apply now or talk to an advisor about your
             background.
           </p>
           <Link className="btn btn-primary" href="/apply/">Apply now</Link>{' '}

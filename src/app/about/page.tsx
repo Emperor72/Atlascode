@@ -13,30 +13,30 @@ export default function AboutPage() {
         <div className="container narrow prose">
           <h2 id="mission">Our mission</h2>
           <p>
-            Every year, talented young people from Agadir and Souss-Massa leave the region to find opportunities in tech, or never get the
-            chance to try. At the same time, local companies struggle to recruit developers, data analysts and designers. {site.name} was
-            created to connect those two realities.
+            Plenty of people want a career in tech, but the usual routes don’t fit them: a degree takes years, and self-teaching from videos
+            leaves you alone with every bug. At the same time, companies still struggle to find juniors who can actually ship. {site.name}{' '}
+            was created to close that gap.
           </p>
           <p>
-            Our mission is simple: <strong>train job-ready tech talent in Agadir, for Morocco and the world</strong>. We do it through
-            intensive, project-based bootcamps, honest advice and long-term support for every learner.
+            Our mission is simple: <strong>train job-ready tech talent, wherever they live</strong>. We do it through intensive,
+            project-based bootcamps taught live online, honest advice and long-term support for every learner in {site.marketsLabel}.
           </p>
 
           <h2 id="method">How we teach</h2>
           <p>
             We believe you learn to code by coding. Our method is based on active learning: short live explanations, then lots of practice,
-            pair programming, real projects and frequent feedback. Instructors are practitioners who build software, analyse data or design
-            products, and teaching assistants make sure nobody stays stuck for long.
+            remote pair programming, real projects and frequent feedback. Instructors are practitioners who build software, analyse data or
+            design products, and teaching assistants make sure nobody stays stuck for long.
           </p>
           <ul className="checklist">
+            <li>
+              <strong>Live, not pre-recorded:</strong> real-time classes with a cohort, not a video library.
+            </li>
             <li>
               <strong>Project-first:</strong> every concept is applied immediately to something you build.
             </li>
             <li>
               <strong>Small cohorts:</strong> personal attention matters more than lecture-hall scale.
-            </li>
-            <li>
-              <strong>Market-driven:</strong> our curricula are reviewed every cohort with input from employers.
             </li>
             <li>
               <strong>Career-focused:</strong> <Link href="/career-services/">career services</Link> start in week one, not after
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </article>
             <article className="card">
               <h3>Inclusion</h3>
-              <p>We select on motivation, not diplomas, and actively encourage women and learners from rural areas to join tech.</p>
+              <p>We select on motivation, not diplomas, and actively welcome career changers, parents and people new to tech.</p>
             </article>
             <article className="card">
               <h3>Craft</h3>
@@ -67,14 +67,16 @@ export default function AboutPage() {
           <h2 id="team">Our team</h2>
           <p>
             Our team brings together instructors from software development, data and design, teaching assistants (often alumni), admissions
-            advisors and a career coach. Come meet them at an info session or <Link href="/campus/">on campus</Link>.
+            advisors and a career coach. We work remotely, just like many of the teams our graduates join, and you can meet us at a free
+            online info session. See <Link href="/online-learning/">how online learning works</Link>.
           </p>
 
-          <h2 id="agadir">Why Agadir</h2>
+          <h2 id="remote-first">Why remote-first</h2>
           <p>
-            We chose Agadir because we believe tech talent should be able to grow where it lives. The region has universities, a dynamic
-            economy and a quality of life that makes it a great place to learn, and increasingly to work remotely for companies anywhere.
-            Read more in our <Link href="/blog/tech-jobs-agadir-souss-massa/">overview of tech jobs in Souss-Massa</Link>.
+            Software is built by distributed teams every day. Learning the same way, on video calls, in shared repositories and in written
+            chat, means you graduate already comfortable with how modern teams work. It also means you can train from home, without
+            relocating, in {site.timezones.uk} or {site.timezones.na}. Read more about{' '}
+            <Link href="/blog/remote-developer-jobs-guide/">landing a remote developer job</Link>.
           </p>
           <p>
             Want to know more? Explore our <Link href="/programs/">programs</Link>, read the <Link href="/faq/">FAQ</Link> or{' '}

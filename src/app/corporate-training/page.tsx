@@ -24,7 +24,7 @@ export default function CorporateTrainingPage() {
           <h2 className="section-title" id="courses">
             Popular corporate training topics
           </h2>
-          <p className="section-intro">Every course can be adapted to your sector, data and tools, and delivered in French or English.</p>
+          <p className="section-intro">Every course can be adapted to your sector, data and tools, and delivered live online to teams in the UK, the US and Canada.</p>
           <div className="grid grid-3">
             {courses.map(([t, d, l]) => (
               <article className="card" key={t}>
@@ -43,13 +43,13 @@ export default function CorporateTrainingPage() {
             <li>A free needs-analysis call to define objectives and the level of participants</li>
             <li>A tailored program built on your real use cases and, when possible, your own (anonymised) data</li>
             <li>Hands-on sessions: participants spend most of the time practising, not listening</li>
-            <li>Delivery on our Agadir campus, at your premises anywhere in Morocco, or online</li>
+            <li>Live online delivery scheduled in your team’s time zone, with optional recordings for staff who miss a session</li>
             <li>Evaluation, attendance sheets and certificates for your HR and training records</li>
           </ul>
           <p>
-            Sectors that benefit most in Souss-Massa include tourism and hospitality, agri-food and export, logistics, retail, banking and
-            insurance, and public institutions. Learn more about the region in our article on{' '}
-            <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and Souss-Massa</Link>.
+            Teams that benefit most include finance, operations, marketing, HR, customer support and IT in sectors such as retail,
+            logistics, financial services, healthcare, hospitality and the public sector. See which skills employers want in our article on{' '}
+            <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link>.
           </p>
           <div className="callout">
             <p>
@@ -72,8 +72,8 @@ export default function CorporateTrainingPage() {
                 a: 'Sessions are usually designed for groups of 5 to 15 participants. For smaller teams, we can recommend seats in our open programs.',
               },
               {
-                q: 'Can training be delivered at our offices?',
-                a: 'Yes. We deliver training in Agadir, across Souss-Massa and in other Moroccan cities, or online.',
+                q: 'Can training be scheduled for a distributed team?',
+                a: 'Yes. Sessions are delivered live online and scheduled around your team’s time zones, including teams split between the UK and North America.',
               },
               {
                 q: 'Do you provide documents for training funding?',

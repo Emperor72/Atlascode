@@ -11,29 +11,29 @@ const cohorts = [
     name: 'Full-Stack Web Development',
     href: '/programs/full-stack-web-development/',
     info: site.programs.fullstack,
-    format: 'Full-time · Mon–Fri 9:00–17:30',
+    format: 'Live online · Mon–Fri 9:00–17:30 (cohort time zone)',
     length: '12 weeks',
   },
   {
     name: 'Part-Time Web Development',
     href: '/programs/part-time-web-development/',
     info: site.programs.parttime,
-    format: 'Tue & Thu 18:30–21:30 + Sat 9:00–14:00',
+    format: 'Live online · Tue & Thu 18:30–21:30 + Sat 9:00–14:00 (cohort time zone)',
     length: '24 weeks',
   },
   {
     name: 'Data Analytics',
     href: '/programs/data-analytics/',
     info: site.programs.data,
-    format: 'Full-time · Mon–Fri',
+    format: 'Live online · Full-time, Mon–Fri',
     length: '10 weeks',
   },
-  { name: 'UI/UX Design', href: '/programs/ui-ux-design/', info: site.programs.uxui, format: 'Full-time · Mon–Fri', length: '8 weeks' },
+  { name: 'UI/UX Design', href: '/programs/ui-ux-design/', info: site.programs.uxui, format: 'Live online · Full-time, Mon–Fri', length: '8 weeks' },
   {
     name: 'Intro to Coding workshop',
     href: '/programs/intro-to-coding/',
     info: site.programs.intro,
-    format: 'Sat & Sun 10:00–16:00',
+    format: 'Live online · Sat & Sun 10:00–16:00',
     length: '2 weekends',
   },
 ];
@@ -44,8 +44,12 @@ export default function CohortsPage() {
       <section className="section">
         <div className="container">
           <h2 className="section-title" id="dates">
-            Next start dates in Agadir
+            Next start dates
           </h2>
+          <p className="section-intro">
+            Each cohort runs live online in {site.timezones.uk} or {site.timezones.na}. Tell your advisor which time zone suits you
+            and we will confirm the matching cohort.
+          </p>
           <div className="grid grid-3">
             {cohorts.map((c) => (
               <article className="card program-card" key={c.href}>
@@ -110,7 +114,7 @@ export default function CohortsPage() {
                 </tr>
                 <tr>
                   <td>Day one</td>
-                  <td>Welcome breakfast, setup session and your first live lecture</td>
+                  <td>Online welcome session, setup check and your first live lecture</td>
                 </tr>
               </tbody>
             </table>
@@ -123,9 +127,9 @@ export default function CohortsPage() {
           </div>
           <h2 id="info-sessions">Free information sessions</h2>
           <p>
-            We regularly host free info sessions on campus and online: a presentation of the programs, a live coding demo and open Q&amp;A
+            We regularly host free online info sessions in UK and US Eastern time: a presentation of the programs, a live coding demo and open Q&amp;A
             with instructors. It’s the easiest way to get a feel for {site.name} before applying. <Link href="/contact/">Contact us</Link>{' '}
-            to get the next date, or visit the <Link href="/campus/">Agadir campus</Link>.
+            to get the next date, or read <Link href="/online-learning/">how live online learning works</Link>.
           </p>
         </div>
       </section>

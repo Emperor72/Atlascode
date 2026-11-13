@@ -7,27 +7,27 @@ const p = site.programs.intro;
 
 export const meta: ProgramMeta = {
   slug: 'intro-to-coding',
-  title: 'Intro to Coding Weekend Workshop in Agadir | Atlas Code',
+  title: 'Intro to Coding Online Weekend Workshop | Atlas Code',
   description:
-    'Try coding over two weekends in Agadir: learn HTML, CSS and JavaScript basics, publish your own web page and see if a developer career suits you.',
-  h1: 'Intro to Coding Weekend Workshop',
-  lead: 'Two weekends, zero experience needed. Learn the basics of HTML, CSS and JavaScript, publish your own personal web page, and find out first-hand whether a career in tech is right for you.',
+    'Try coding live online over two weekends from the UK, US or Canada: learn HTML, CSS and JavaScript basics, publish your own web page and see if tech suits you.',
+  h1: 'Intro to Coding Online Weekend Workshop',
+  lead: 'Two weekends of live online classes, zero experience needed. Learn the basics of HTML, CSS and JavaScript from home, publish your own personal web page, and find out first-hand whether a career in tech is right for you.',
   crumb: 'Intro to Coding',
   summary:
-    'A beginner-friendly workshop over two weekends: HTML, CSS and JavaScript basics, a published personal page and a taste of a developer’s day.',
-  badge: 'Weekends · 2 weekends',
+    'A beginner-friendly live online workshop over two weekends: HTML, CSS and JavaScript basics, a published personal page and a taste of a developer’s day.',
+  badge: 'Weekends · 2 weekends · Online',
   related: [
     '/programs/full-stack-web-development/',
-    '/blog/learn-to-code-agadir-guide/',
+    '/blog/online-coding-bootcamp-guide/',
     '/blog/how-to-prepare-for-coding-bootcamp/',
     '/blog/javascript-vs-python-beginners/',
   ],
   course: {
-    name: 'Intro to Coding Weekend Workshop',
+    name: 'Intro to Coding Online Weekend Workshop',
     price: p.price,
     hours: 24,
     weeks: 2,
-    mode: 'Onsite',
+    mode: 'Online',
   },
 };
 
@@ -40,10 +40,10 @@ export default function Content() {
           <h2 className="section-title" id="key-facts">Key facts</h2>
           <dl className="key-facts">
             <div><dt>Duration</dt><dd>2 weekends (4 days, about 24 hours)</dd></div>
-            <div><dt>Schedule</dt><dd>Saturday and Sunday, 10:00–16:00</dd></div>
-            <div><dt>Format</dt><dd>Onsite, on our campus in {site.address.city}</dd></div>
-            <div><dt>Language of instruction</dt><dd>English &amp; French, with Darija support</dd></div>
-            <div><dt>Price</dt><dd>{p.priceLabel}, deductible from bootcamp tuition if you enroll later</dd></div>
+            <div><dt>Schedule</dt><dd>Saturday and Sunday, 10:00–16:00 in your group’s time zone</dd></div>
+            <div><dt>Format</dt><dd>Live online, in {site.timezones.uk} or {site.timezones.na}</dd></div>
+            <div><dt>Language of instruction</dt><dd>English</dd></div>
+            <div><dt>Price</dt><dd>{p.priceLabel}, deductible from bootcamp tuition if you enrol later</dd></div>
             <div><dt>When</dt><dd>Held {p.nextStart}</dd></div>
           </dl>
           <nav className="toc" aria-label="On this page">
@@ -69,8 +69,8 @@ export default function Content() {
           <h2 className="section-title" id="who">Who the workshop is for</h2>
           <p className="section-intro">
             Thinking about a career in tech but not sure where to start? Spending three months and a significant sum on a
-            bootcamp is a big decision. This workshop lets you try coding for real, with instructors and other beginners,
-            before you commit to anything bigger.
+            bootcamp is a big decision. This live online workshop lets learners in {site.marketsLabel} try coding for
+            real, with instructors and other beginners, before committing to anything bigger.
           </p>
           <div className="grid grid-3">
             <article className="card">
@@ -83,31 +83,35 @@ export default function Content() {
             <article className="card">
               <h3>Future bootcamp applicants</h3>
               <p>
-                You are considering our <Link href="/programs/full-stack-web-development/">full-time full-stack
+                You are considering our <Link href="/programs/full-stack-web-development/">full-time online full-stack
                 bootcamp</Link> or the{' '}
-                <Link href="/programs/part-time-web-development/">part-time web development program</Link> and want a
-                head start — plus a clearer idea of what learning to code feels like.
+                <Link href="/programs/part-time-web-development/">part-time online web development program</Link> and
+                want a head start — plus a clearer idea of what learning to code live online feels like.
               </p>
             </article>
             <article className="card">
               <h3>Curious professionals and students</h3>
               <p>
-                You work in marketing, tourism, small business or education, or you are still at university, and you
-                want to understand how websites work so you can talk to developers and build simple pages yourself.
+                You work in marketing, retail, small business or education, or you are still at university, and you want
+                to understand how websites work so you can talk to developers and build simple pages yourself.
               </p>
             </article>
           </div>
           <h3>What you need</h3>
           <ul className="checklist">
             <li>No previous experience. We start from what a web page is and how a browser displays it.</li>
-            <li>A laptop (Windows, macOS or Linux) with a modern browser. Let us know in advance if you do not have one.</li>
+            <li>
+              A laptop or desktop computer (Windows, macOS or Linux) with a modern browser — a tablet or phone is not
+              enough for writing code.
+            </li>
+            <li>A stable internet connection, a webcam and a microphone or headset so you can join in and ask questions.</li>
             <li>Basic computer skills: creating folders, downloading files and typing comfortably.</li>
             <li>Four days of your time across two weekends, and the curiosity to try, fail and try again.</li>
           </ul>
           <p>
-            Planning how to learn to code locally? Our{' '}
-            <Link href="/blog/learn-to-code-agadir-guide/">guide to learning to code in Agadir</Link> compares the
-            options, from free online courses to bootcamps.
+            Weighing up different ways to learn to code online? Our{' '}
+            <Link href="/blog/online-coding-bootcamp-guide/">guide to online coding bootcamps</Link> compares the
+            options, from free self-paced courses to live bootcamps.
           </p>
         </div>
       </section>
@@ -147,8 +151,9 @@ export default function Content() {
             <li>
               <h3>Weekend 1 · Saturday: how the web works and HTML</h3>
               <p>
-                Setting up VS Code, what happens when you type a URL, and your first HTML file. Structure, headings,
-                links, images and lists. By the afternoon you have the skeleton of your personal page.
+                Setting up VS Code (we help you on video if anything goes wrong), what happens when you type a URL, and
+                your first HTML file. Structure, headings, links, images and lists. By the afternoon you have the
+                skeleton of your personal page.
               </p>
             </li>
             <li>
@@ -168,9 +173,9 @@ export default function Content() {
             <li>
               <h3>Weekend 2 · Sunday: publish and a developer’s day</h3>
               <p>
-                Git and GitHub basics, then publishing your page online. In the afternoon, a simulated developer’s day:
-                a stand-up, a small task from a “ticket”, a code review and a short demo — followed by an honest
-                conversation about bootcamps, careers and next steps.
+                Git and GitHub basics, then publishing your page online. In the afternoon, a simulated remote
+                developer’s day: a video stand-up, a small task from a “ticket”, a code review and a short screen-shared
+                demo — followed by an honest conversation about bootcamps, careers and next steps.
               </p>
             </li>
           </ol>
@@ -181,18 +186,21 @@ export default function Content() {
         <div className="container">
           <p className="eyebrow">Daily rhythm</p>
           <h2 className="section-title" id="typical-day">A typical workshop day</h2>
-          <p className="section-intro">Small groups, lots of support and a relaxed pace designed for beginners.</p>
+          <p className="section-intro">
+            Small online groups, lots of support and a relaxed pace designed for beginners. Times are in your group’s
+            time zone ({site.timezones.uk} or {site.timezones.na}).
+          </p>
           <div className="table-wrap">
             <table>
               <thead>
                 <tr><th scope="col">Time</th><th scope="col">Activity</th></tr>
               </thead>
               <tbody>
-                <tr><td>10:00–10:30</td><td>Welcome, coffee and a recap of where we left off.</td></tr>
-                <tr><td>10:30–12:00</td><td>Short demonstration followed by guided exercises, step by step.</td></tr>
-                <tr><td>12:00–13:00</td><td>Lunch break and informal chat with instructors.</td></tr>
-                <tr><td>13:00–15:00</td><td>Build time: apply the morning’s ideas to your personal page with help on hand.</td></tr>
-                <tr><td>15:00–16:00</td><td>Show and tell: share what you built, ask questions and preview the next day.</td></tr>
+                <tr><td>10:00–10:30</td><td>Welcome on video, a quick check that everyone’s set-up works, and a recap of where we left off.</td></tr>
+                <tr><td>10:30–12:00</td><td>Short live demonstration followed by guided exercises, step by step.</td></tr>
+                <tr><td>12:00–13:00</td><td>Lunch break — step away from the screen.</td></tr>
+                <tr><td>13:00–15:00</td><td>Build time: apply the morning’s ideas to your personal page, with instructors available in breakout rooms.</td></tr>
+                <tr><td>15:00–16:00</td><td>Show and tell: share your screen, ask questions and preview the next day.</td></tr>
               </tbody>
             </table>
           </div>
@@ -200,7 +208,8 @@ export default function Content() {
             <p>
               <strong>Tip:</strong> Getting stuck is normal — it is a big part of what developers do every day. The
               workshop is designed so you learn how to get unstuck: reading error messages, searching documentation and
-              asking good questions.
+              asking good questions in the group chat or on a call. Sessions are recorded, and our{' '}
+              <Link href="/online-learning/">online learning page</Link> shows how the virtual classroom works.
             </p>
           </div>
         </div>
@@ -217,8 +226,8 @@ export default function Content() {
             <article className="card">
               <h3>A personal web page</h3>
               <p>
-                A one-page site about you — your story, your interests, your goals — written in HTML and styled with CSS,
-                in the language of your choice: English, French or Arabic.
+                A one-page site about you — your story, your interests, your goals — written in HTML and styled with
+                CSS.
               </p>
             </article>
             <article className="card">
@@ -257,7 +266,10 @@ export default function Content() {
             </article>
             <article className="card">
               <h3>Sharing your work</h3>
-              <p>Git and GitHub for saving your code, and a free static hosting service to publish your page.</p>
+              <p>
+                Git and GitHub for saving your code, a free static hosting service to publish your page, plus video calls
+                and a group chat for live help.
+              </p>
             </article>
           </div>
           <p>
@@ -277,7 +289,7 @@ export default function Content() {
             After two weekends, some participants realise they love it and apply to a bootcamp; others decide coding is
             not for them — which is just as valuable to know before investing in a longer program.
           </p>
-          <p>If you want to go further, there are several natural next steps at Atlas Code:</p>
+          <p>If you want to go further, there are several natural next steps at Atlas Code, all taught live online:</p>
           <ul className="checklist">
             <li>
               The <Link href="/programs/full-stack-web-development/">Full-Stack Web Development bootcamp</Link>: 12
@@ -298,7 +310,7 @@ export default function Content() {
           </ul>
           <p>
             For a wider view of the profession, read{' '}
-            <Link href="/blog/how-to-become-web-developer-morocco/">how to become a web developer in Morocco</Link>. Our{' '}
+            <Link href="/blog/how-to-become-web-developer-uk/">how to become a web developer in the UK</Link>. Our{' '}
             <Link href="/career-services/">career services</Link> are part of the longer bootcamps; during the workshop,
             instructors are happy to answer your questions about careers, but they will be honest that results depend on
             sustained practice and the job market.
@@ -311,13 +323,15 @@ export default function Content() {
           <p className="eyebrow">Investment</p>
           <h2 className="section-title" id="tuition">Price and booking</h2>
           <p className="section-intro">
-            The workshop costs <strong>{p.priceLabel}</strong>. If you later enroll in one of our bootcamps, this amount
-            is deducted from your bootcamp tuition — so trying first costs you nothing extra.
+            The workshop costs <strong>{p.priceLabel}</strong>. If you later enrol in one of our bootcamps, this amount is
+            deducted from your bootcamp tuition — so trying first costs you nothing extra.
           </p>
           <div className="grid grid-3">
             <article className="card">
               <h3>1. Pick your weekends</h3>
-              <p>Workshops are held {p.nextStart}. Groups are small, so places are limited.</p>
+              <p>
+                Workshops are held {p.nextStart}, in UK time or US Eastern time. Groups are small, so places are limited.
+              </p>
               <Link className="card-link" href="/upcoming-cohorts/">See upcoming workshop dates</Link>
             </article>
             <article className="card">
@@ -334,8 +348,7 @@ export default function Content() {
           <p>
             Thinking about a bootcamp afterwards? Read{' '}
             <Link href="/blog/how-to-prepare-for-coding-bootcamp/">how to prepare for a coding bootcamp</Link> and see
-            how the <Link href="/admissions/">bootcamp admissions process</Link> works. The workshop takes place on our{' '}
-            <Link href="/campus/">Agadir campus</Link>.
+            how the <Link href="/admissions/">bootcamp admissions process</Link> works.
           </p>
         </div>
       </section>
@@ -352,23 +365,27 @@ export default function Content() {
               },
               {
                 q: 'Is the workshop fee really deducted from bootcamp tuition?',
-                a: 'Yes. If you enroll in an Atlas Code bootcamp after the workshop, the workshop price is deducted from your bootcamp tuition. Ask our team for the conditions that apply to your cohort.',
+                a: 'Yes. If you enrol in an Atlas Code bootcamp after the workshop, the workshop price is deducted from your bootcamp tuition. Ask our team for the conditions that apply to your cohort.',
+              },
+              {
+                q: 'Which time zone is the workshop in?',
+                a: `Each workshop group runs in either ${site.timezones.uk} or ${site.timezones.na}, from 10:00 to 16:00 on Saturday and Sunday. Choose the group that fits where you live when you register.`,
               },
               {
                 q: 'Can I attend only one weekend?',
-                a: 'The two weekends build on each other, so we recommend attending all four days. If you must miss a day, tell us early and we will suggest how to catch up.',
+                a: 'The two weekends build on each other, so we recommend attending all four days. If you must miss a day, tell us early; sessions are recorded and we will suggest how to catch up.',
               },
               {
-                q: 'Do I need my own laptop?',
-                a: 'A personal laptop is best because you keep everything you set up. If you do not have one, contact us before registering and we will see what we can arrange.',
+                q: 'What equipment do I need?',
+                a: 'A laptop or desktop computer with a modern browser, a stable internet connection, and a webcam and microphone. We send simple set-up instructions before the first session and help you on the day if anything does not work.',
               },
               {
                 q: 'Will I be able to get a job after the workshop?',
                 a: 'No, and we will not pretend otherwise. Twenty-four hours gives you foundations and a clear picture of the profession. Becoming job-ready takes a longer program such as one of our bootcamps, plus sustained practice.',
               },
               {
-                q: 'I live in Inezgane, Taroudant or Tiznit. Is it worth the trip?',
-                a: 'Many beginners find that learning in person, with instructors beside them, makes the first steps much easier. Sessions run from 10:00 to 16:00, which leaves time to travel the same day.',
+                q: 'Is learning to code online really as effective as in person?',
+                a: 'For many beginners, yes, provided the classes are live and interactive. You can ask questions at any time, share your screen so an instructor sees exactly what you see, and keep the recordings to review later.',
               },
             ]}
           />
@@ -379,8 +396,7 @@ export default function Content() {
         <div className="container">
           <h2>Write your first lines of code this month</h2>
           <p>
-            Workshops are held {p.nextStart} on our Agadir campus. Register now, or talk to an advisor if you have
-            questions.
+            Live online workshops are held {p.nextStart}. Register now, or talk to an advisor if you have questions.
           </p>
           <Link className="btn btn-primary" href="/apply/">Register now</Link>{' '}
           <Link className="btn btn-ghost" href="/contact/">Talk to an advisor</Link>

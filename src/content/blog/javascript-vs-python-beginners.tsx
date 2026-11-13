@@ -7,19 +7,19 @@ export const meta: PostMeta = {
   slug: 'javascript-vs-python-beginners',
   title: 'JavaScript vs Python: Which to Learn First? | Atlas Code',
   description:
-    'JavaScript or Python as your first language? Compare uses, learning curve and job paths for Moroccan beginners, then pick one with a simple test.',
+    'JavaScript or Python as your first language? Compare uses, learning curve and job paths in the UK, US and Canada, then pick one with a five-question test.',
   h1: 'JavaScript vs Python: Which Should You Learn First?',
-  lead: 'Both are excellent first languages, and both lead to real jobs. The right choice depends less on the language and more on what you want to build. Here is a clear, practical way to decide.',
+  lead: 'Both are excellent first languages, and both lead to real jobs in the UK, the US and Canada. The right choice depends less on the language and more on what you want to build. Here is a clear, practical way to decide.',
   crumb: 'JavaScript vs Python',
   date: '2026-07-15',
-  modified: '2026-07-15',
+  modified: '2026-11-13',
   category: 'Learning',
   readTime: '9 min read',
   related: [
     '/blog/how-to-prepare-for-coding-bootcamp/',
     '/programs/intro-to-coding/',
     '/programs/full-stack-web-development/',
-    '/blog/how-to-become-web-developer-morocco/',
+    '/blog/how-to-become-web-developer-uk/',
   ],
 };
 
@@ -33,12 +33,12 @@ const faq = [
     a: 'We don’t recommend it. Learning two syntaxes at once doubles the confusion without doubling the progress. Get comfortable with one language, build a few projects, then pick up the second. It will take a fraction of the time.',
   },
   {
-    q: 'Which language is better for freelancing in Morocco?',
-    a: 'For most beginners, JavaScript and web skills. Local businesses and international clients regularly need websites, online shops, landing pages and fixes to existing sites. Python freelancing exists, especially for automation and data work, but projects tend to require more experience.',
+    q: 'Which language is better for freelancing?',
+    a: 'For most beginners, JavaScript and web skills. Small businesses, charities and local organisations regularly need websites, online shops, landing pages and fixes to existing sites. Python freelancing exists, especially for automation and data work, but projects tend to require more experience.',
   },
   {
-    q: 'Do I need to speak English to learn to code?',
-    a: 'Keywords in both languages are English words, and most documentation is in English, so basic reading skills help a lot. You don’t need to be fluent to start. Your technical English will improve quickly as you code, and French resources are also widely available.',
+    q: 'Do I need to be good at maths to learn to code?',
+    a: 'Not for most web development. Basic arithmetic and logical thinking are enough to start with either language. Data science paths eventually involve statistics, but data analyst roles lean more on clear thinking, spreadsheets and SQL than on advanced maths.',
   },
   {
     q: 'How long does it take to become job-ready?',
@@ -46,11 +46,11 @@ const faq = [
   },
 ];
 
-const pythonExample = `words = ["agadir", "souss", "taroudant", "tiznit"]
+const pythonExample = `words = ["leeds", "toronto", "boston", "cardiff"]
 long_words = [w for w in words if len(w) > 5]
 print(len(long_words))`;
 
-const jsExample = `const words = ["agadir", "souss", "taroudant", "tiznit"];
+const jsExample = `const words = ["leeds", "toronto", "boston", "cardiff"];
 const longWords = words.filter(w => w.length > 5);
 console.log(longWords.length);`;
 
@@ -68,7 +68,7 @@ export default function Content() {
                   <li><a href="#what-they-do">What each language is used for</a></li>
                   <li><a href="#side-by-side">Side-by-side comparison</a></li>
                   <li><a href="#learning-curve">What the first weeks feel like</a></li>
-                  <li><a href="#jobs">Jobs in Morocco and remote work</a></li>
+                  <li><a href="#jobs">Jobs in the UK, US and Canada</a></li>
                   <li><a href="#how-to-choose">How to choose in five questions</a></li>
                   <li><a href="#myths">Myths that waste beginners’ time</a></li>
                   <li><a href="#start">How to start this week</a></li>
@@ -76,8 +76,8 @@ export default function Content() {
                 </ol>
               </nav>
 
-              <p>If you have decided to learn to code, the next question arrives almost immediately: JavaScript or Python? Friends recommend one, YouTube recommends the other, and a cousin who works in Casablanca says it doesn’t matter. That last answer is partly true, but it isn’t very useful when you are standing at the start line and want to stop hesitating.</p>
-              <p>This guide is written for beginners in Morocco: students in Agadir, graduates looking for a first job, people changing careers, and freelancers who want a more technical skill. We will compare the two languages honestly, explain what each one is actually used for, and give you a simple way to choose so you can start this week rather than next month.</p>
+              <p>If you have decided to learn to code, the next question arrives almost immediately: JavaScript or Python? Friends recommend one, YouTube recommends the other, and a friend who already works in tech says it doesn’t matter. That last answer is partly true, but it isn’t very useful when you are standing at the start line and want to stop hesitating.</p>
+              <p>This guide is written for beginners in the UK, the US and Canada: students, graduates looking for a first job, people changing careers, and freelancers who want a more technical skill. We will compare the two languages honestly, explain what each one is actually used for, and give you a simple way to choose so you can start this week rather than next month.</p>
 
               <h2 id="short-answer">The short answer</h2>
               <p><strong>If you want to build websites and web applications, start with JavaScript.</strong> It is the only language that runs natively in every web browser, so any web developer has to learn it sooner or later.</p>
@@ -142,15 +142,15 @@ export default function Content() {
               <p>The reward is that JavaScript connects directly to HTML and CSS. Within a week you can build a page with a button that does something, and within a month you can build a small interactive project you can share with family and friends. For many people, that visible progress is what keeps them going through the hard parts.</p>
               <p>Honestly, the hard parts are the same in both languages: understanding variables and data types, thinking in loops and conditions, breaking a problem into small steps, and reading error messages calmly. Those skills transfer completely. That is why the choice matters less than the consistency.</p>
 
-              <h2 id="jobs">Jobs in Morocco and remote work</h2>
-              <p>We won’t give you invented percentages here, because reliable public statistics on language demand in Morocco are scarce. What you can observe yourself, by browsing job boards and LinkedIn for a few evenings, is a broad pattern:</p>
+              <h2 id="jobs">Jobs in the UK, US and Canada</h2>
+              <p>We won’t give you invented percentages here, because demand for each language shifts from year to year and varies by city and sector. What you can observe yourself, by browsing job boards and LinkedIn for a few evenings, is a broad pattern:</p>
               <ul>
-                <li><strong>Web roles are the most numerous entry-level openings.</strong> Digital agencies, e-commerce businesses, startups and offshoring companies that serve French and European clients regularly hire front-end and full-stack developers, and JavaScript appears in a large share of these listings.</li>
+                <li><strong>Web roles are the most numerous entry-level openings.</strong> Digital agencies, e-commerce businesses, startups, software companies and in-house teams at larger organisations regularly hire front-end and full-stack developers, and JavaScript (often with TypeScript) appears in a large share of these listings.</li>
                 <li><strong>Data roles are growing but often ask for more.</strong> Data analyst positions usually expect SQL, spreadsheet skills and some Python, plus comfort with business questions. Data science and machine learning roles often prefer candidates with a degree in a quantitative field.</li>
-                <li><strong>Freelance work leans towards the web.</strong> Small businesses in cities like Agadir, Inezgane and Tiznit need websites, online shops and booking systems far more often than they need machine learning.</li>
+                <li><strong>Freelance work leans towards the web.</strong> Small businesses, sole traders and local organisations need websites, online shops and booking systems far more often than they need machine learning.</li>
               </ul>
-              <p>If you want to understand the local picture in more detail, read our overview of <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and the Souss-Massa region</Link>. If your goal is to work for foreign companies from home, our <Link href="/blog/remote-developer-jobs-from-morocco/">practical guide to remote developer jobs from Morocco</Link> covers time zones, payments and contracts.</p>
-              <p>Salaries vary a lot by city, company type, language skills and the quality of your portfolio, so treat any figure you see online as a rough indication rather than a promise. In both paths, a strong portfolio and good communication in French and English tend to matter more than the language you started with.</p>
+              <p>If you want to understand the entry-level market in more detail, read our overview of <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link>. If your goal is to work from home, our <Link href="/blog/remote-developer-jobs-guide/">practical guide to remote developer jobs</Link> covers where to find roles, time zones and contracts.</p>
+              <p>Salaries vary a lot by city, company type, specialisation and the quality of your portfolio, so treat any figure you see online as a rough indication rather than a promise. For reliable general data, official sources such as the ONS in the UK, the US Bureau of Labor Statistics and Job Bank in Canada are a better starting point than viral posts. In both paths, a strong portfolio and clear communication tend to matter more than the language you started with.</p>
 
               <h2 id="how-to-choose">How to choose in five questions</h2>
               <p>Answer these honestly. Count which language gets more of your answers.</p>
@@ -161,7 +161,7 @@ export default function Content() {
                 <li><strong>How strong is your maths background?</strong> You don’t need advanced maths for either, but data science paths eventually involve statistics. If maths makes you anxious, web development is a gentler road.</li>
                 <li><strong>Which program or course will you follow?</strong> If you plan to join a structured program, learn the language it uses before day one. That alone puts you ahead.</li>
               </ol>
-              <p>If you are aiming for a web career, our <Link href="/programs/full-stack-web-development/">full-time Full-Stack Web Development bootcamp</Link> is built around the web, where JavaScript is unavoidable. If you need to keep your job while you learn, the <Link href="/programs/part-time-web-development/">part-time Web Development program</Link> covers the same direction on evenings and Saturdays. If analysis is your goal, look at the <Link href="/programs/data-analytics/">Data Analytics program</Link> and check its syllabus to see which tools it uses.</p>
+              <p>If you are aiming for a web career, our <Link href="/programs/full-stack-web-development/">full-time Full-Stack Web Development bootcamp</Link> is built around the web, where JavaScript is unavoidable. If you need to keep your job while you learn, the <Link href="/programs/part-time-web-development/">part-time Web Development program</Link> covers the same direction in live online evening and weekend sessions. If analysis is your goal, look at the <Link href="/programs/data-analytics/">Data Analytics program</Link> and check its syllabus to see which tools it uses.</p>
 
               <h2 id="myths">Myths that waste beginners’ time</h2>
               <h3>“Python is for serious programmers, JavaScript is just for websites”</h3>
@@ -183,7 +183,7 @@ export default function Content() {
                 <li>Learn basic Git and put your project on GitHub so you can show it.</li>
                 <li>Find people to learn with, online or in person, so you can ask questions when you get stuck.</li>
               </ul>
-              <p>If you want guided, hands-on practice with an instructor, our <Link href="/programs/intro-to-coding/">Intro to Coding weekend workshop</Link> is designed for complete beginners and is a good way to test whether coding suits you before committing to a longer program. For a day-by-day routine, follow our <Link href="/blog/how-to-prepare-for-coding-bootcamp/">30-day plan to prepare for a coding bootcamp</Link>, and for the bigger picture read <Link href="/blog/how-to-become-web-developer-morocco/">how to become a web developer in Morocco</Link>. When you feel ready, the <Link href="/admissions/">admissions process</Link> explains each step from application to your first day.</p>
+              <p>If you want guided, hands-on practice with an instructor, our live online <Link href="/programs/intro-to-coding/">Intro to Coding weekend workshop</Link> is designed for complete beginners and is a good way to test whether coding suits you before committing to a longer program. For a day-by-day routine, follow our <Link href="/blog/how-to-prepare-for-coding-bootcamp/">30-day plan to prepare for a coding bootcamp</Link>, and for the bigger picture read <Link href="/blog/how-to-become-web-developer-uk/">how to become a web developer in the UK</Link>. When you feel ready, the <Link href="/admissions/">admissions process</Link> explains each step from application to your first day.</p>
 
               <h2 id="faq">FAQ</h2>
               <Faq items={faq} />
@@ -192,7 +192,7 @@ export default function Content() {
             <aside className="sidebar">
               <div className="sidebar-box">
                 <h2 className="h4">New to coding?</h2>
-                <p>Try programming with an instructor over one weekend and find out which path suits you.</p>
+                <p>Try programming live online with an instructor over one weekend and find out which path suits you.</p>
                 <ul>
                   <li><Link href="/programs/intro-to-coding/">Intro to Coding workshop</Link></li>
                   <li><Link href="/programs/full-stack-web-development/">Full-Stack Web Development</Link></li>
@@ -201,7 +201,7 @@ export default function Content() {
               </div>
               <div className="sidebar-box">
                 <h2 className="h4">Next start dates</h2>
-                <p>Full-Stack Web Development starts {site.programs.fullstack.nextStart}. Intro to Coding workshops run {site.programs.intro.nextStart}.</p>
+                <p>Full-Stack Web Development starts {site.programs.fullstack.nextStart}. Intro to Coding workshops run {site.programs.intro.nextStart}. Live classes run in {site.timezones.uk} or {site.timezones.na}.</p>
                 <p><Link className="btn btn-primary" href="/upcoming-cohorts/">See upcoming cohorts</Link></p>
               </div>
             </aside>

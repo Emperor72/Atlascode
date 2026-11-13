@@ -6,7 +6,6 @@ const PATH = '/contact/';
 export const metadata = coreMetadata(PATH);
 
 export default function ContactPage() {
-  const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`;
   return (
     <CorePage path={PATH} schemaType="ContactPage">
       <section className="section">
@@ -31,17 +30,15 @@ export default function ContactPage() {
                 <a href={`mailto:${site.email}`}>{site.email}</a>
               </li>
               <li>
-                <strong>Campus</strong>
-                <address style={{ fontStyle: 'normal' }}>
-                  {site.address.street}, {site.address.postalCode} {site.address.city}, Morocco
-                </address>
-              </li>
-              <li>
-                <strong>Opening hours</strong>
+                <strong>Advisor hours</strong>
                 {site.hoursText}
               </li>
+              <li>
+                <strong>Video call</strong>
+                Prefer to talk face to face? Use the form to request a free video call. We schedule calls for UK and North American
+                time zones.
+              </li>
             </ul>
-            <iframe className="map-embed" src={mapSrc} title={`Map: ${site.name} in ${site.address.city}`} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
           </div>
           <div>
             <h2 className="section-title" id="message">
@@ -60,6 +57,15 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="field">
+                <label htmlFor="c-country">Country</label>
+                <select id="c-country" name="country" defaultValue="United Kingdom">
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Canada</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div className="field">
                 <label htmlFor="c-email">Email</label>
                 <input id="c-email" name="email" type="email" autoComplete="email" required />
               </div>
@@ -69,7 +75,7 @@ export default function ContactPage() {
                   <option>Programs</option>
                   <option>Admissions</option>
                   <option>Tuition & financing</option>
-                  <option>Campus visit</option>
+                  <option>Book a video call</option>
                   <option>Hiring graduates</option>
                   <option>Corporate training</option>
                   <option>Other</option>

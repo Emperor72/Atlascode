@@ -25,7 +25,7 @@ export function buildMetadata(m: MetaInput): Metadata {
     description: m.description,
     alternates: {
       canonical: m.path,
-      languages: { en: m.path, 'x-default': m.path },
+      languages: { en: m.path, 'en-GB': m.path, 'en-US': m.path, 'en-CA': m.path, 'x-default': m.path },
       types: { 'application/rss+xml': [{ url: '/blog/feed.xml', title: `${site.name} Blog` }] },
     },
     robots: m.noindex
@@ -56,32 +56,26 @@ const postalAddress = {
   addressCountry: site.address.country,
 };
 
-/** Organization + LocalBusiness + WebSite: rendered once, in the root layout. */
+/** Organization + WebSite: rendered once, in the root layout. */
 export function organizationSchema() {
   const sameAs = Object.values(site.social).filter(Boolean);
   return {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': ['EducationalOrganization', 'LocalBusiness'],
+        '@type': 'EducationalOrganization',
         '@id': ORG_ID,
         name: site.name,
-        alternateName: `${site.name} Bootcamp`,
+        alternateName: `${site.name} Online Bootcamp`,
         url: `${site.url}/`,
         logo: absoluteUrl('/icon.png'),
         image: absoluteUrl(OG_IMAGE),
         description: site.description,
         telephone: site.phone,
         email: site.email,
-        priceRange: 'MAD',
         address: postalAddress,
-        geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
-        openingHoursSpecification: [
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '19:00' },
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Saturday'], opens: '09:00', closes: '13:00' },
-        ],
-        areaServed: ['Agadir', 'Inezgane', 'Aït Melloul', 'Taroudant', 'Tiznit', 'Souss-Massa', 'Morocco'],
-        knowsLanguage: ['en', 'fr', 'ar'],
+        areaServed: site.markets.map((name) => ({ '@type': 'Country', name })),
+        knowsLanguage: ['en'],
         ...(sameAs.length ? { sameAs } : {}),
       },
       { '@type': 'WebSite', '@id': WEBSITE_ID, url: `${site.url}/`, name: site.name, inLanguage: site.lang, publisher: { '@id': ORG_ID } },
@@ -128,7 +122,7 @@ export function courseSchema(meta: ProgramMeta) {
     name: meta.course.name,
     description: meta.description,
     url,
-    inLanguage: ['en', 'fr'],
+    inLanguage: 'en',
     provider: { '@type': 'EducationalOrganization', '@id': ORG_ID, name: site.name, sameAs: `${site.url}/` },
     educationalCredentialAwarded: `${site.name} Certificate of Completion`,
     timeRequired: `PT${meta.course.hours}H`,
@@ -137,7 +131,7 @@ export function courseSchema(meta: ProgramMeta) {
         '@type': 'Offer',
         category: 'Paid',
         price: meta.course.price,
-        priceCurrency: 'MAD',
+        priceCurrency: site.currency,
         availability: 'https://schema.org/InStock',
         url: absoluteUrl('/apply/'),
       },
@@ -148,7 +142,7 @@ export function courseSchema(meta: ProgramMeta) {
         courseMode: meta.course.mode,
         courseWorkload: `PT${meta.course.hours}H`,
         courseSchedule: { '@type': 'Schedule', duration: `P${meta.course.weeks}W`, repeatFrequency: 'Weekly' },
-        location: { '@type': 'Place', name: `${site.name} campus, ${site.address.city}`, address: postalAddress },
+        location: { '@type': 'VirtualLocation', url: absoluteUrl('/online-learning/') },
       },
     ],
   };

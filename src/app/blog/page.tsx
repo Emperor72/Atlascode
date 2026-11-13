@@ -54,7 +54,7 @@ export default function BlogIndexPage() {
       <section className="section">
         <div className="container narrow">
           <p>
-            Looking for something specific? Start with our pillar guide to <Link href="/blog/learn-to-code-agadir-guide/">learning to code in Agadir</Link>,
+            Looking for something specific? Start with our pillar guide to <Link href="/blog/online-coding-bootcamp-guide/">online coding bootcamps</Link>,
             compare our <Link href="/programs/">bootcamp programs</Link> or browse the <Link href="/sitemap/">full sitemap</Link>.
           </p>
         </div>

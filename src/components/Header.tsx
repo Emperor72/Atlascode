@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Logo } from './Logo';
+import { ThemeToggle } from './ThemeToggle';
 
 const programLinks = [
   { href: '/programs/full-stack-web-development/', label: 'Full-Stack Web Development', note: 'Full-time · 12 weeks' },
@@ -17,7 +18,7 @@ const mainLinks = [
   { href: '/admissions/', label: 'Admissions' },
   { href: '/tuition-financing/', label: 'Tuition' },
   { href: '/career-services/', label: 'Careers' },
-  { href: '/campus/', label: 'Campus' },
+  { href: '/online-learning/', label: 'How It Works' },
   { href: '/blog/', label: 'Blog' },
   { href: '/contact/', label: 'Contact' },
 ];
@@ -40,18 +41,21 @@ export function Header() {
         <Link href="/" className="logo" aria-label="Atlas Code: home">
           <Logo />
         </Link>
-        <button
-          type="button"
-          className="nav-toggle"
-          aria-expanded={open}
-          aria-controls="site-nav"
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
-          <span className="bar" />
-          <span className="bar" />
-          <span className="bar" />
-        </button>
+        <div className="header-tools">
+          <ThemeToggle />
+          <button
+            type="button"
+            className="nav-toggle"
+            aria-expanded={open}
+            aria-controls="site-nav"
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span className="sr-only">{open ? 'Close menu' : 'Open menu'}</span>
+            <span className="bar" />
+            <span className="bar" />
+            <span className="bar" />
+          </button>
+        </div>
         <nav id="site-nav" className={`site-nav${open ? ' is-open' : ''}`} aria-label="Main">
           <ul className="nav-list">
             <li className="has-sub">

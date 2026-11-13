@@ -21,11 +21,11 @@ export default function CareerServicesPage() {
           </p>
           <div className="grid grid-3">
             {[
-              ['Career strategy session', 'A one-to-one session to define your target roles, sectors and locations: Agadir, other Moroccan cities, remote or freelance.'],
-              ['CV & LinkedIn makeover', 'Turn your previous experience into an asset. We review your CV in French and English and optimise your LinkedIn profile for recruiters.'],
+              ['Career strategy session', 'A one-to-one session to define your target roles, sectors and locations: the UK, the US, Canada, remote-first companies or freelance.'],
+              ['CV & LinkedIn makeover', 'Turn your previous experience into an asset. We tailor your CV to UK or North American conventions (CV vs résumé) and optimise your LinkedIn profile for recruiters.'],
               ['GitHub & portfolio coaching', 'Clean repositories, clear READMEs, a deployed portfolio site and case studies that show how you think, not just what you built.'],
               ['Mock technical interviews', 'Practice live coding, SQL or design challenges and behavioural questions with instructors, with detailed feedback.'],
-              ['Employer introductions', 'Demo day, company talks on campus and introductions to employers looking for junior profiles that match yours.'],
+              ['Employer introductions', 'Online demo day, virtual company talks and introductions to employers looking for junior profiles that match yours.'],
               ['Alumni support', 'Access to the alumni community, job-board posts and check-ins with the career team after graduation.'],
             ].map(([t, d]) => (
               <article className="card" key={t}>
@@ -45,7 +45,7 @@ export default function CareerServicesPage() {
           <ol className="timeline">
             <li>
               <h3>Weeks 1–2 · Define your target</h3>
-              <p>Workshop on the tech job market in Morocco and abroad, then a one-to-one career strategy session.</p>
+              <p>Workshop on the junior tech job market in the UK, the US, Canada and remote-first companies, then a one-to-one career strategy session.</p>
             </li>
             <li>
               <h3>Mid-program · Build your brand</h3>
@@ -57,7 +57,7 @@ export default function CareerServicesPage() {
             </li>
             <li>
               <h3>Demo day · Show your work</h3>
-              <p>Present your final project to employers, alumni and the local tech community.</p>
+              <p>Present your final project live online to employers, alumni and the wider tech community.</p>
             </li>
             <li>
               <h3>After graduation · Active job search</h3>
@@ -71,26 +71,26 @@ export default function CareerServicesPage() {
         <div className="container narrow prose">
           <h2 id="paths">Career paths after the bootcamp</h2>
           <p>Our graduates prepare for several kinds of first roles. Each one has its own strategy, and we help you choose:</p>
-          <h3>Local employment in Agadir and Souss-Massa</h3>
+          <h3>Employers where you live</h3>
           <p>
-            Web agencies, digital marketing firms, tourism and hospitality groups, agri-food and export companies, and public and private
-            organisations increasingly need web, data and design skills. Our guide to{' '}
-            <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and Souss-Massa</Link> explains where to look.
+            Digital agencies, startups, scale-ups, consultancies and the in-house tech teams of retailers, banks, health and public-sector
+            organisations all hire juniors in web, data and design. Our guide to{' '}
+            <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link> explains where to look.
           </p>
-          <h3>Offshoring, nearshoring and national employers</h3>
+          <h3>Career switching inside your current employer</h3>
           <p>
-            Morocco has an established offshoring and IT services sector serving French-speaking and European clients, with many positions in
-            Casablanca, Rabat and other hubs, some of them hybrid or remote.
+            Many career changers make their first move internally, into an analytics, digital or IT team where they already know the
+            business. We help you build the case and the portfolio to support it.
           </p>
           <h3>Remote and international roles</h3>
           <p>
             Your skills and English let you apply to remote-first companies. It’s competitive for juniors, so we help you build a standout
-            portfolio. Read <Link href="/blog/remote-developer-jobs-from-morocco/">remote developer jobs from Morocco</Link>.
+            portfolio. Read our <Link href="/blog/remote-developer-jobs-guide/">guide to remote developer jobs</Link>.
           </p>
           <h3>Freelance</h3>
           <p>
-            Some graduates start by freelancing for local businesses. We cover finding clients, quoting, contracts and the basics of
-            freelance status in Morocco.
+            Some graduates start by freelancing for small businesses. We cover finding clients, quoting and contracts; for tax and
+            self-employment status where you live, we recommend advice from an accountant.
           </p>
           <div className="callout">
             <p>
@@ -106,8 +106,8 @@ export default function CareerServicesPage() {
                 a: 'No. Job outcomes depend on the market, your effort and your choices. We commit to providing structured career support during the program and while you are actively searching after graduation.',
               },
               {
-                q: 'Is career support available in French?',
-                a: 'Yes. Many employers in Morocco recruit in French, so we help you prepare CVs and interviews in French and English.',
+                q: 'Does career support cover both the UK and North America?',
+                a: 'Yes. CV and résumé formats, interview styles and job boards differ between the UK, the US and Canada, so we tailor coaching to the market you are targeting.',
               },
               {
                 q: 'Can I work as a freelancer after the bootcamp?',
@@ -121,7 +121,7 @@ export default function CareerServicesPage() {
           />
           <p>
             Ready to start? Explore our <Link href="/programs/">bootcamp programs</Link> or read{' '}
-            <Link href="/blog/how-to-become-web-developer-morocco/">how to become a web developer in Morocco</Link>.
+            <Link href="/blog/how-to-become-web-developer-uk/">how to become a web developer in the UK</Link>.
           </p>
         </div>
       </section>

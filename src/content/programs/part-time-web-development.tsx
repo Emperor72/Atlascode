@@ -7,15 +7,15 @@ const p = site.programs.parttime;
 
 export const meta: ProgramMeta = {
   slug: 'part-time-web-development',
-  title: 'Part-Time Web Development Bootcamp in Agadir | Atlas Code',
+  title: 'Part-Time Online Web Development Bootcamp | Atlas Code',
   description:
-    'Learn full-stack web development in Agadir without quitting your job: 24 weeks of evenings and Saturdays, React, Node.js, PostgreSQL and real projects.',
-  h1: 'Part-Time Web Development Bootcamp',
-  lead: 'The complete full-stack curriculum — JavaScript, TypeScript, React, Node.js and PostgreSQL — spread over 24 weeks of weekday evenings and Saturday mornings, so you can retrain while you keep working.',
+    'Learn full-stack web development online without quitting your job: 24 weeks of live evening and Saturday classes in UK or US Eastern time. React, Node.js, SQL.',
+  h1: 'Part-Time Online Web Development Bootcamp',
+  lead: 'The complete full-stack curriculum — JavaScript, TypeScript, React, Node.js and PostgreSQL — taught live online over 24 weeks of weekday evenings and Saturday mornings, so you can retrain from home while you keep working.',
   crumb: 'Part-Time Web Development',
   summary:
-    'The full-stack curriculum over 24 weeks of Tuesday and Thursday evenings plus Saturday mornings, designed for people who work.',
-  badge: 'Part-time · 24 weeks',
+    'The full-stack curriculum taught live online over 24 weeks of Tuesday and Thursday evenings plus Saturday mornings, in UK or US Eastern time, designed for people who work.',
+  badge: 'Part-time · 24 weeks · Online',
   related: [
     '/programs/full-stack-web-development/',
     '/tuition-financing/',
@@ -23,11 +23,11 @@ export const meta: ProgramMeta = {
     '/blog/how-to-prepare-for-coding-bootcamp/',
   ],
   course: {
-    name: 'Part-Time Web Development Bootcamp',
+    name: 'Part-Time Online Web Development Bootcamp',
     price: p.price,
     hours: 300,
     weeks: 24,
-    mode: 'Blended',
+    mode: 'Online',
   },
 };
 
@@ -40,9 +40,9 @@ export default function Content() {
           <h2 className="section-title" id="key-facts">Key facts</h2>
           <dl className="key-facts">
             <div><dt>Duration</dt><dd>24 weeks, part-time (about 300 live hours plus self-study)</dd></div>
-            <div><dt>Schedule</dt><dd>Tuesday and Thursday 18:30–21:30, Saturday 9:00–14:00</dd></div>
-            <div><dt>Format</dt><dd>Blended: onsite evenings in {site.address.city}, plus online sessions when needed</dd></div>
-            <div><dt>Language of instruction</dt><dd>English &amp; French, with Darija support</dd></div>
+            <div><dt>Schedule</dt><dd>Tuesday and Thursday 18:30–21:30, Saturday 9:00–14:00, in your cohort’s time zone</dd></div>
+            <div><dt>Format</dt><dd>Live online, in {site.timezones.uk} or {site.timezones.na}</dd></div>
+            <div><dt>Language of instruction</dt><dd>English</dd></div>
             <div><dt>Tuition</dt><dd>{p.priceLabel}</dd></div>
             <div><dt>Next start</dt><dd>{p.nextStart}</dd></div>
           </dl>
@@ -68,16 +68,16 @@ export default function Content() {
           <p className="eyebrow">Is it right for you?</p>
           <h2 className="section-title" id="who">Who the part-time program is for</h2>
           <p className="section-intro">
-            Not everyone can stop earning for three months. This part-time web development bootcamp in Agadir is
-            designed for people with jobs, families or studies who still want a serious, structured path into software
-            development.
+            Not everyone can stop earning for three months. This part-time online web development bootcamp is designed
+            for people in {site.marketsLabel} with jobs, families or studies who still want a serious, structured path
+            into software development — without a commute.
           </p>
           <div className="grid grid-3">
             <article className="card">
               <h3>Working professionals</h3>
               <p>
-                You work in a hotel, a bank, a call centre, a school or an administration in Agadir, Inezgane or Aït
-                Melloul, and you want to retrain without giving up your salary while you learn.
+                You work in hospitality, finance, customer service, education or the public sector, and you want to
+                retrain without giving up your salary while you learn. Classes start after a normal working day.
               </p>
             </article>
             <article className="card">
@@ -100,18 +100,18 @@ export default function Content() {
           <ul className="checklist">
             <li>
               Basic familiarity with HTML, CSS or JavaScript. If you have never coded, start with our{' '}
-              <Link href="/programs/intro-to-coding/">Intro to Coding weekend workshop</Link> or the pre-work we send
-              after admission.
+              <Link href="/programs/intro-to-coding/">Intro to Coding online weekend workshop</Link> or the pre-work we
+              send after admission.
             </li>
             <li>
               About 8–10 hours per week of self-study on top of the live sessions. This is the single biggest factor in
               how much you get out of the program.
             </li>
             <li>A personal laptop that runs VS Code, Node.js and a modern browser (8 GB of RAM recommended).</li>
-            <li>Reliable internet at home for the occasional online session and for submitting projects.</li>
+            <li>A reliable broadband connection, a webcam and a headset with a microphone for live classes.</li>
             <li>
-              Completing our <Link href="/admissions/">admissions process</Link>, which includes a conversation about
-              how you will fit the program into your week.
+              Completing our <Link href="/admissions/">admissions process</Link>, which includes a video call about how
+              you will fit the program into your week.
             </li>
           </ul>
         </div>
@@ -123,8 +123,8 @@ export default function Content() {
           <h2 className="section-title" id="outcomes">What you’ll be able to do</h2>
           <p className="section-intro">
             You follow the same curriculum as our{' '}
-            <Link href="/programs/full-stack-web-development/">full-time full-stack web development bootcamp</Link>, at a
-            pace designed for working adults. By the end you will be able to:
+            <Link href="/programs/full-stack-web-development/">full-time online full-stack web development bootcamp</Link>,
+            at a pace designed for working adults. By the end you will be able to:
           </p>
           <ul className="checklist">
             <li>Use Git and GitHub confidently, including branches, pull requests and code review.</li>
@@ -136,7 +136,7 @@ export default function Content() {
             <li>Design PostgreSQL databases and query them with Prisma.</li>
             <li>Add authentication and authorisation to an application safely.</li>
             <li>Write automated tests and deploy a full-stack application to the internet.</li>
-            <li>Collaborate in a team on a real product and present it on demo day.</li>
+            <li>Collaborate in a remote team on a real product and present it at our online demo day.</li>
           </ul>
         </div>
       </section>
@@ -208,7 +208,10 @@ export default function Content() {
             </li>
             <li>
               <h3>Weeks 21–24 · Final team project and demo day</h3>
-              <p>Teams plan and ship a complete product over four weeks of sprints, then present it live on demo day.</p>
+              <p>
+                Remote teams plan and ship a complete product over four weeks of sprints, then present it live at an
+                online demo day.
+              </p>
             </li>
           </ol>
         </div>
@@ -219,7 +222,8 @@ export default function Content() {
           <p className="eyebrow">Weekly rhythm</p>
           <h2 className="section-title" id="typical-week">A typical week</h2>
           <p className="section-intro">
-            Three live sessions anchor your week. Self-study fills the gaps, at times that suit your job.
+            Three live online sessions anchor your week, in your cohort’s time zone ({site.timezones.uk} or{' '}
+            {site.timezones.na}). Self-study fills the gaps, at times that suit your job.
           </p>
           <div className="table-wrap">
             <table>
@@ -227,20 +231,21 @@ export default function Content() {
                 <tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">What happens</th></tr>
               </thead>
               <tbody>
-                <tr><td>Monday</td><td>Flexible</td><td>Self-study: review the previous Saturday’s material, short exercises and reading (about 2 hours).</td></tr>
-                <tr><td>Tuesday</td><td>18:30–21:30</td><td>Live session on campus: new concept, live coding, guided practice.</td></tr>
-                <tr><td>Wednesday</td><td>Flexible</td><td>Self-study and project work; ask questions in the cohort chat.</td></tr>
-                <tr><td>Thursday</td><td>18:30–21:30</td><td>Live session: second concept of the week, code review and pair programming.</td></tr>
+                <tr><td>Monday</td><td>Flexible</td><td>Self-study: review the previous Saturday’s material and recordings, short exercises and reading (about 2 hours).</td></tr>
+                <tr><td>Tuesday</td><td>18:30–21:30</td><td>Live online session: new concept, live coding in a shared environment, guided practice.</td></tr>
+                <tr><td>Wednesday</td><td>Flexible</td><td>Self-study and project work; ask questions in the cohort’s community chat.</td></tr>
+                <tr><td>Thursday</td><td>18:30–21:30</td><td>Live online session: second concept of the week, code review and remote pair programming.</td></tr>
                 <tr><td>Friday</td><td>Flexible</td><td>Light review or rest — sustainability matters over 24 weeks.</td></tr>
-                <tr><td>Saturday</td><td>9:00–14:00</td><td>Long workshop: project building, team work, demos and individual feedback.</td></tr>
+                <tr><td>Saturday</td><td>9:00–14:00</td><td>Long live workshop: project building, team work, demos and 1:1 feedback from instructors and TAs.</td></tr>
                 <tr><td>Sunday</td><td>Flexible</td><td>Finish the week’s project or catch up (about 2–3 hours).</td></tr>
               </tbody>
             </table>
           </div>
           <div className="callout">
             <p>
-              <strong>Blended format:</strong> evening sessions take place on campus. When needed — for example during
-              exam periods or exceptional circumstances — some sessions move online so the cohort stays on track.
+              <strong>Fully online:</strong> every session is live on video, and lessons are recorded so you can catch up
+              if work or family gets in the way. See how our <Link href="/online-learning/">online learning experience</Link>{' '}
+              works, from the community chat to 1:1 help.
             </p>
           </div>
         </div>
@@ -255,10 +260,10 @@ export default function Content() {
           </p>
           <div className="grid grid-2">
             <article className="card">
-              <h3>Responsive site for a local business</h3>
+              <h3>Responsive site for a small business</h3>
               <p>
-                An accessible, mobile-first website for a business such as a cooperative, a café or a surf camp, built
-                from a design mock-up.
+                An accessible, mobile-first website for a business such as a bakery, a yoga studio or a local charity,
+                built from a design mock-up.
               </p>
             </article>
             <article className="card">
@@ -274,7 +279,7 @@ export default function Content() {
             </article>
             <article className="card">
               <h3>Team capstone</h3>
-              <p>A product designed and shipped by your team across four weeks, presented on demo day.</p>
+              <p>A product designed and shipped by your remote team across four weeks, presented at online demo day.</p>
             </article>
           </div>
         </div>
@@ -292,7 +297,10 @@ export default function Content() {
           <div className="grid grid-3">
             <article className="card">
               <h3>Workflow</h3>
-              <p>Git, GitHub, VS Code, the terminal, npm, ESLint, Prettier and a shared sprint board.</p>
+              <p>
+                Git, GitHub, VS Code, the terminal, npm, ESLint, Prettier, a shared sprint board, video calls and a team
+                chat workspace.
+              </p>
             </article>
             <article className="card">
               <h3>Front end</h3>
@@ -313,23 +321,24 @@ export default function Content() {
           <p>
             The part-time program targets the same entry-level roles as the full-time bootcamp:{' '}
             <strong>junior full-stack developer</strong>, <strong>front-end or React developer</strong>,{' '}
-            <strong>junior Node.js developer</strong>, <strong>web integrator</strong> and{' '}
+            <strong>junior Node.js developer</strong>, <strong>web developer</strong> and{' '}
             <strong>freelance web developer</strong>. Some learners also use their new skills inside their current
-            company — automating tasks, building internal tools or moving into a digital team.
+            organisation — automating tasks, building internal tools or moving into a digital team.
           </p>
           <p>
             Because you keep working while you learn, your transition can be gradual: freelance projects in the evenings
-            first, then a move into a full-time developer role when the opportunity is right. Our guide to{' '}
-            <Link href="/blog/remote-developer-jobs-from-morocco/">remote developer jobs from Morocco</Link> and our
-            overview of <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and Souss-Massa</Link>{' '}
-            describe where junior developers find work. Pay varies a lot by employer, city and experience, so treat
-            online salary figures as rough market indications only.
+            first, then a move into a full-time developer role when the opportunity is right. Junior developers in{' '}
+            {site.marketsLabel} find work at agencies, startups, in-house teams and remote-first companies; our overview
+            of <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link> and our{' '}
+            <Link href="/blog/remote-developer-jobs-guide/">guide to remote developer jobs</Link> describe where to look.
+            Pay varies a lot by country, employer, city and experience, so treat online salary figures as rough market
+            indications only.
           </p>
           <p>
             No bootcamp can guarantee a job. Your outcome depends on your practice, your portfolio and the market.{' '}
             <Link href="/career-services/">Atlas Code career services</Link> support part-time learners with CV and
-            LinkedIn reviews, portfolio feedback, mock interviews and job-search coaching — scheduled around your working
-            hours.
+            LinkedIn reviews, portfolio feedback, mock interviews and job-search coaching — held online and scheduled
+            around your working hours.
           </p>
         </div>
       </section>
@@ -339,8 +348,8 @@ export default function Content() {
           <p className="eyebrow">Investment</p>
           <h2 className="section-title" id="tuition">Tuition and next steps</h2>
           <p className="section-intro">
-            Tuition for the part-time program is <strong>{p.priceLabel}</strong>. Because you can keep your income, many
-            learners prefer to spread the cost with a payment plan.
+            Tuition for the part-time online program is <strong>{p.priceLabel}</strong>. Because you can keep your
+            income, many learners prefer to spread the cost with a payment plan.
           </p>
           <div className="grid grid-3">
             <article className="card">
@@ -350,19 +359,22 @@ export default function Content() {
             </article>
             <article className="card">
               <h3>2. Apply</h3>
-              <p>Submit a short application, talk with our team and complete a basic logic exercise.</p>
+              <p>Submit a short application, have a video call with our team and complete a basic logic exercise.</p>
               <Link className="card-link" href="/admissions/">See the admissions steps</Link>
             </article>
             <article className="card">
               <h3>3. Reserve your seat</h3>
-              <p>The next part-time cohort starts {p.nextStart}. A deposit of {site.deposit} secures your place.</p>
+              <p>
+                The next part-time cohort starts {p.nextStart}. Choose a UK or US Eastern time cohort; a deposit of{' '}
+                {site.deposit} secures your place.
+              </p>
               <Link className="card-link" href="/upcoming-cohorts/">Check upcoming start dates</Link>
             </article>
           </div>
           <p>
             Before you start, read{' '}
-            <Link href="/blog/how-to-prepare-for-coding-bootcamp/">how to prepare for a coding bootcamp</Link>, and come
-            and see the <Link href="/campus/">Atlas Code campus in Agadir</Link> where evening sessions take place.
+            <Link href="/blog/how-to-prepare-for-coding-bootcamp/">how to prepare for a coding bootcamp</Link> and our{' '}
+            <Link href="/blog/online-coding-bootcamp-guide/">guide to choosing an online coding bootcamp</Link>.
           </p>
         </div>
       </section>
@@ -382,27 +394,27 @@ export default function Content() {
                 a: 'About 11 hours of live sessions (two evenings and Saturday morning) plus 8–10 hours of self-study. Plan for roughly 20 hours per week in total.',
               },
               {
+                q: 'Which time zone are the evening classes in?',
+                a: `Each cohort follows one time zone: either ${site.timezones.uk} or ${site.timezones.na}. Evening sessions run from 18:30 to 21:30 and Saturday sessions from 9:00 to 14:00 in that time zone. Learners in Canada or elsewhere in North America usually join the US Eastern Time cohort and adjust for their local time.`,
+              },
+              {
                 q: 'What happens if I miss a session?',
-                a: 'Life happens. Session materials and exercises are shared with the cohort, and you can catch up during the next session or with an instructor. Missing sessions regularly, however, makes it hard to keep up.',
+                a: 'Life happens. Sessions are recorded and materials are shared with the cohort, and you can catch up with an instructor or TA online. Missing sessions regularly, however, makes it hard to keep up with team work.',
               },
               {
-                q: 'Are any sessions online?',
-                a: 'The program is blended. Most sessions are on campus in Agadir, and some move online when needed, for example during periods when travelling in the evening is difficult for the cohort.',
-              },
-              {
-                q: 'I live in Taroudant or Tiznit. Can I still join?',
-                a: 'Yes, as long as you can reach the campus for the evening and Saturday sessions. Several hours on the road each week is a real commitment, so discuss your plan with us during admissions.',
+                q: 'Do I need to be in the UK, the US or Canada?',
+                a: 'The program is built for learners in the UK, the US and Canada, but you can join from anywhere if you can attend live sessions at your cohort times. If you plan to work in a specific country afterwards, having the right to work there is your responsibility; we cannot sponsor visas.',
               },
               {
                 q: 'I have never coded. Where should I start?',
-                a: 'Start with our Intro to Coding workshop, held over two weekends. Its fee is deductible from your bootcamp tuition if you enroll afterwards.',
+                a: 'Start with our Intro to Coding online workshop, held live over two weekends. Its fee is deductible from your bootcamp tuition if you enrol afterwards.',
               },
             ]}
           />
           <p>
             Interested in other fields? Compare the{' '}
-            <Link href="/programs/data-analytics/">Data Analytics bootcamp</Link> and the{' '}
-            <Link href="/programs/ui-ux-design/">UI/UX Design bootcamp</Link>.
+            <Link href="/programs/data-analytics/">online Data Analytics bootcamp</Link> and the{' '}
+            <Link href="/programs/ui-ux-design/">online UI/UX Design bootcamp</Link>.
           </p>
         </div>
       </section>
@@ -411,8 +423,8 @@ export default function Content() {
         <div className="container">
           <h2>Keep your job. Start your developer career.</h2>
           <p>
-            The next part-time cohort starts {p.nextStart}. Apply today or talk to an advisor about fitting the program
-            into your week.
+            The next part-time online cohort starts {p.nextStart}. Apply today or talk to an advisor about fitting the
+            program into your week.
           </p>
           <Link className="btn btn-primary" href="/apply/">Apply now</Link>{' '}
           <Link className="btn btn-ghost" href="/contact/">Talk to an advisor</Link>

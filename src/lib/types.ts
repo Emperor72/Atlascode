@@ -32,7 +32,7 @@ export interface ProgramMeta extends BaseMeta {
   badge: string;
   course: {
     name: string;
-    price: number; // MAD
+    price: number; // USD (site.currency)
     hours: number;
     weeks: number;
     mode: 'Onsite' | 'Blended' | 'Online';

@@ -1,11 +1,15 @@
 import type { Metadata, Viewport } from 'next';
+import { Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Effects } from '@/components/Effects';
 import { JsonLd } from '@/components/JsonLd';
 import { site } from '@/lib/site';
 import { organizationSchema } from '@/lib/seo';
+
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -25,14 +29,23 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0f2a44',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#070b16' },
+  ],
   width: 'device-width',
   initialScale: 1,
 };
 
+/** Applies the saved theme before first paint, so there is no flash of the wrong theme. */
+const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang={site.lang}>
+    <html lang={site.lang} className={inter.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
         <a className="skip-link" href="#main">
           Skip to content
@@ -40,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <Effects />
         <JsonLd data={organizationSchema()} />
         {site.ga4Id && (
           <>

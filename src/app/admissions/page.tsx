@@ -33,7 +33,7 @@ export default function AdmissionsPage() {
             <li>
               <h3>2 · Talk with an admissions advisor (30 minutes)</h3>
               <p>
-                Within two working days, an advisor contacts you to schedule a call, video meeting or campus visit. We discuss your goals,
+                Within two working days, an advisor contacts you to schedule a video call at a time that suits your time zone. We discuss your goals,
                 your availability, the program that fits you best and how tuition and financing work. It’s a conversation, not an
                 interview, so bring your questions.
               </p>
@@ -91,11 +91,11 @@ export default function AdmissionsPage() {
               <li>A computer science degree, or any degree</li>
               <li>Previous coding experience</li>
               <li>Advanced maths</li>
-              <li>Perfect English (French and Darija support is available)</li>
+              <li>Perfect English; clear, everyday English is enough</li>
               <li>To be under a certain age; we welcome career changers of all ages</li>
             </ul>
             <p>
-              Worried about your age or background? Read <Link href="/blog/career-change-to-tech-after-30/">switching to tech after 30 in Morocco</Link>.
+              Worried about your age or background? Read <Link href="/blog/career-change-to-tech-after-30/">switching to tech after 30</Link>.
             </p>
           </div>
         </div>
@@ -106,14 +106,15 @@ export default function AdmissionsPage() {
           <h2 id="requirements">Practical requirements</h2>
           <h3>Age and documents</h3>
           <p>
-            Applicants must be at least 18 years old at the start of the program. To enroll you will need a copy of your national ID card
-            (CIN) or passport. Diplomas are not required.
+            Applicants must be at least 18 years old at the start of the program. To enroll you will need a copy of a government-issued photo ID
+            (passport, driving licence or national ID card). Diplomas are not required.
           </p>
-          <h3>Laptop</h3>
+          <h3>Laptop and home setup</h3>
           <p>
             You need a laptop you can install software on: ideally 8 GB RAM or more, and an SSD. For web development and data analytics, a
-            recent Windows, macOS or Linux laptop works. For UI/UX design, any laptop that runs Figma in the browser smoothly is enough. If
-            equipment is a barrier, tell your advisor; we can sometimes help with a loan laptop for the duration of the program.
+            recent Windows, macOS or Linux laptop works. For UI/UX design, any laptop that runs Figma in the browser smoothly is enough. Because classes are
+            live online, you also need a stable broadband connection, a webcam and a headset with a microphone. See{' '}
+            <Link href="/online-learning/">how online learning works</Link>.
           </p>
           <h3>Time commitment</h3>
           <p>
@@ -123,8 +124,8 @@ export default function AdmissionsPage() {
           </p>
           <h3>Language</h3>
           <p>
-            Classes are taught in English, with French and Darija support. Documentation and most technical resources are in English, so
-            being able to read English is important; speaking fluently is not.
+            Classes are taught in English, and so are documentation and most technical resources. You need to follow live sessions and
+            take part in discussions, but you don’t need to be a native speaker.
           </p>
           <div className="callout">
             <p>
@@ -151,8 +152,8 @@ export default function AdmissionsPage() {
                 a: 'You get feedback and a list of resources, and you can retake the challenge for a later cohort. Many successful students were not accepted on their first try.',
               },
               {
-                q: 'Can I apply if I live outside Agadir?',
-                a: 'Yes. Learners come from across Souss-Massa and other regions. The programs are taught on campus, so you need to be able to attend in person. Our advisors can share tips about accommodation in Agadir.',
+                q: 'Can I apply from anywhere?',
+                a: 'Yes. Programs are taught live online for learners in the UK, the US and Canada. Each cohort runs in UK time or US Eastern Time, so you need to be able to attend live sessions in your cohort’s hours.',
               },
               {
                 q: 'How many seats are there per cohort?',

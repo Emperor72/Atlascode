@@ -28,7 +28,7 @@ export default function ProgramsPage() {
             Compare our bootcamp programs
           </h2>
           <p className="section-intro">
-            Every program is taught on our Agadir campus, ends with a portfolio of real projects and includes career services. The
+            Every program is taught live online, ends with a portfolio of real projects and includes career services. The
             differences are in focus, rhythm and the roles each one prepares you for.
           </p>
           <div className="table-wrap">
@@ -110,7 +110,7 @@ export default function ProgramsPage() {
           <h3>You like building things people use → Web Development</h3>
           <p>
             If you enjoy seeing an idea become a working website or app, and you like solving puzzles step by step, web development is the
-            most versatile choice. It also has the widest range of entry-level jobs, from agencies in Agadir to remote companies in Europe.
+            most versatile choice. It also has the widest range of entry-level jobs, from agencies and startups to in-house teams and remote-first companies.
             Pick the <Link href="/programs/full-stack-web-development/">full-time full-stack bootcamp</Link> if you can commit 12 weeks, or
             the <Link href="/programs/part-time-web-development/">part-time web development program</Link> if you need to keep working.
           </p>

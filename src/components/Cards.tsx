@@ -79,7 +79,7 @@ export function Related({ paths, title = 'Keep exploring' }: { paths?: string[];
 }
 
 export function CtaBand({
-  title = 'Ready to write your first line of code in Agadir?',
+  title = 'Ready to write your first line of code?',
   text = 'Applying takes five minutes and commits you to nothing. An advisor will call you to talk through your goals, the right program and financing.',
 }: {
   title?: string;

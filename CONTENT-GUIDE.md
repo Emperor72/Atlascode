@@ -21,14 +21,14 @@ import { Faq } from '@/components/Faq';
 import type { PostMeta } from '@/lib/types';   // or ProgramMeta
 
 export const meta: PostMeta = {
-  slug: 'how-to-become-web-developer-morocco',
-  title: 'How to Become a Web Developer in Morocco (2026) | Atlas Code',
+  slug: 'how-to-become-web-developer-uk',
+  title: 'How to Become a Web Developer in the UK (2026) | Atlas Code',
   description: '140–160 characters…',
-  h1: 'How to Become a Web Developer in Morocco: A Step-by-Step Roadmap',
+  h1: 'How to Become a Web Developer in the UK: A Step-by-Step Roadmap',
   lead: 'Intro shown under the H1.',
   crumb: 'Become a Web Developer',
   date: '2026-09-01', modified: '2026-10-20', category: 'Careers', readTime: '11 min read',
-  related: ['/programs/full-stack-web-development/', '/blog/learn-to-code-agadir-guide/'],
+  related: ['/programs/full-stack-web-development/', '/blog/online-coding-bootcamp-guide/'],
 };
 
 export default function Content() {
@@ -46,7 +46,7 @@ The layout renders the hero (breadcrumbs, H1, lead, date) and the "Keep explorin
 
 ## 3. Values: never hard-code these
 
-`site.phone`, `site.email`, `site.deposit`,
+`site.phone`, `site.email`, `site.deposit`, `site.timezones.uk|na`, `site.marketsLabel`,
 `site.programs.fullstack|parttime|data|uxui|intro` → `.priceLabel`, `.price`, `.nextStart`.
 
 Example: `<dd>{site.programs.fullstack.priceLabel}</dd>`.
@@ -82,17 +82,18 @@ span.badge
 /programs/full-stack-web-development/  /programs/part-time-web-development/
 /programs/data-analytics/  /programs/ui-ux-design/  /programs/intro-to-coding/
 /admissions/  /tuition-financing/  /upcoming-cohorts/  /career-services/
-/hiring-partners/  /corporate-training/  /campus/  /about/  /faq/  /contact/  /apply/
+/hiring-partners/  /corporate-training/  /online-learning/  /about/  /faq/  /contact/  /apply/
 /blog/
-/blog/how-to-become-web-developer-morocco/   /blog/coding-bootcamp-vs-university-morocco/
-/blog/tech-jobs-agadir-souss-massa/          /blog/learn-to-code-agadir-guide/
-/blog/javascript-vs-python-beginners/        /blog/remote-developer-jobs-from-morocco/
+/blog/how-to-become-web-developer-uk/       /blog/coding-bootcamp-vs-university-degree/
+/blog/junior-tech-jobs-uk-us-canada/        /blog/online-coding-bootcamp-guide/
+/blog/javascript-vs-python-beginners/       /blog/remote-developer-jobs-guide/
 /blog/how-to-prepare-for-coding-bootcamp/    /blog/career-change-to-tech-after-30/
 /privacy-policy/  /terms/  /sitemap/
 ```
 
 ## 7. Editorial rules
 
-- Write in English, in a warm and concrete voice, for Moroccan learners.
+- Write in British English, in a warm and concrete voice, for learners in the UK, the US and Canada. Atlas Code is a live online bootcamp (cohorts in UK time or US Eastern Time); never describe a campus or in-person classes.
+- Don't give legal, visa or tax advice: right to work is the learner's responsibility.
 - **Don't invent** testimonials, graduate names, placement rates, Atlas Code salary data or partner companies.
 - Each page links to its programs, to admissions/apply, and to 2–4 related pages, with descriptive anchors.

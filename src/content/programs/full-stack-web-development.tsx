@@ -7,27 +7,27 @@ const p = site.programs.fullstack;
 
 export const meta: ProgramMeta = {
   slug: 'full-stack-web-development',
-  title: 'Full-Stack Web Development Bootcamp in Agadir | Atlas Code',
+  title: 'Online Full-Stack Web Development Bootcamp | Atlas Code',
   description:
-    'Become a job-ready developer in 12 weeks at our full-stack web development bootcamp in Agadir: React, Node.js, PostgreSQL, real projects, career support.',
-  h1: 'Full-Stack Web Development Bootcamp',
-  lead: 'Twelve intensive weeks on our Agadir campus to go from solid basics to shipping complete web applications with JavaScript, TypeScript, React, Node.js and PostgreSQL, then presenting your team project on demo day.',
+    'Become a job-ready developer in 12 weeks with our live online full-stack bootcamp for the UK, US and Canada: React, Node.js, PostgreSQL and real projects.',
+  h1: 'Online Full-Stack Web Development Bootcamp',
+  lead: 'Twelve intensive weeks of live online classes to go from solid basics to shipping complete web applications with JavaScript, TypeScript, React, Node.js and PostgreSQL, then presenting your team project at an online demo day.',
   crumb: 'Full-Stack Web Development',
   summary:
-    'Learn to build and deploy complete web applications with JavaScript, TypeScript, React, Node.js and PostgreSQL in 12 full-time weeks on our Agadir campus.',
-  badge: 'Full-time · 12 weeks',
+    'Learn to build and deploy complete web applications with JavaScript, TypeScript, React, Node.js and PostgreSQL in 12 full-time weeks of live online classes, in UK or US Eastern time.',
+  badge: 'Full-time · 12 weeks · Online',
   related: [
     '/programs/part-time-web-development/',
     '/admissions/',
-    '/blog/how-to-become-web-developer-morocco/',
+    '/blog/how-to-become-web-developer-uk/',
     '/blog/javascript-vs-python-beginners/',
   ],
   course: {
-    name: 'Full-Stack Web Development Bootcamp',
+    name: 'Online Full-Stack Web Development Bootcamp',
     price: p.price,
     hours: 540,
     weeks: 12,
-    mode: 'Onsite',
+    mode: 'Online',
   },
 };
 
@@ -40,9 +40,9 @@ export default function Content() {
           <h2 className="section-title" id="key-facts">Key facts</h2>
           <dl className="key-facts">
             <div><dt>Duration</dt><dd>12 weeks, full-time (about 540 hours)</dd></div>
-            <div><dt>Schedule</dt><dd>Monday to Friday, 9:00–17:30</dd></div>
-            <div><dt>Format</dt><dd>Onsite, on our campus in {site.address.city}</dd></div>
-            <div><dt>Language of instruction</dt><dd>English &amp; French, with Darija support</dd></div>
+            <div><dt>Schedule</dt><dd>Monday to Friday, 9:00–17:30 in your cohort’s time zone</dd></div>
+            <div><dt>Format</dt><dd>Live online, in {site.timezones.uk} or {site.timezones.na}</dd></div>
+            <div><dt>Language of instruction</dt><dd>English</dd></div>
             <div><dt>Tuition</dt><dd>{p.priceLabel}</dd></div>
             <div><dt>Next start</dt><dd>{p.nextStart}</dd></div>
           </dl>
@@ -68,24 +68,24 @@ export default function Content() {
           <p className="eyebrow">Is it right for you?</p>
           <h2 className="section-title" id="who">Who this bootcamp is for</h2>
           <p className="section-intro">
-            Our full-stack web development bootcamp in Agadir is built for motivated people who want to change what they
-            do every day — and who can commit to twelve demanding weeks. Learners come from Agadir itself, but also from
-            Inezgane, Aït Melloul, Taroudant, Tiznit and further afield.
+            Our online full-stack web development bootcamp is built for motivated people in {site.marketsLabel} who want
+            to change what they do every day — and who can commit to twelve demanding weeks. You learn from home, live,
+            with a small cohort that keeps the same hours as you.
           </p>
           <div className="grid grid-3">
             <article className="card">
               <h3>Students and recent graduates</h3>
               <p>
-                You have a degree or a few years of university — in IT, economics, science or something else entirely —
-                and you want the practical, project-based skills that employers ask for in interviews but that lectures
-                rarely cover.
+                You have a degree or a few years of university — in computing, economics, science or something else
+                entirely — and you want the practical, project-based skills that employers ask for in interviews but that
+                lectures rarely cover.
               </p>
             </article>
             <article className="card">
               <h3>Career changers</h3>
               <p>
-                You work in tourism, retail, teaching, logistics or administration and you are ready to move into tech.
-                Many people make this switch later in life; our guide to{' '}
+                You work in hospitality, retail, teaching, logistics or administration and you are ready to move into
+                tech. Many people make this switch later in life; our guide to{' '}
                 <Link href="/blog/career-change-to-tech-after-30/">changing careers into tech after 30</Link> covers what
                 to expect honestly.
               </p>
@@ -102,26 +102,27 @@ export default function Content() {
           <ul className="checklist">
             <li>
               No computer science degree is required, but you need to have written some code before day one. Our{' '}
-              <Link href="/programs/intro-to-coding/">Intro to Coding weekend workshop</Link> or the free pre-work we send
-              after admission is enough.
+              <Link href="/programs/intro-to-coding/">Intro to Coding online weekend workshop</Link> or the free pre-work
+              we send after admission is enough.
             </li>
             <li>
-              A laptop that can run a modern browser, VS Code and Node.js comfortably (8 GB of RAM recommended). If this
-              is a barrier, tell us during admissions.
+              A laptop that can run a modern browser, VS Code and Node.js comfortably (8 GB of RAM recommended), a
+              reliable broadband connection, a webcam and a headset with a microphone.
             </li>
-            <li>Comfortable reading English or French technical documentation; you do not need to be fluent in both.</li>
+            <li>Comfortable reading English technical documentation and taking part in live discussions in English.</li>
             <li>
-              Availability for the full schedule, Monday to Friday, plus a few hours of review some evenings and weekends.
+              Availability for the full live schedule, Monday to Friday, plus a few hours of review some evenings and
+              weekends.
             </li>
             <li>
-              Passing our short <Link href="/admissions/">admissions process</Link>: an application, a conversation with
+              Passing our short <Link href="/admissions/">admissions process</Link>: an application, a video call with
               the team and a logic-and-basics exercise.
             </li>
           </ul>
           <p>
             If you work full-time and cannot step away for three months, the{' '}
-            <Link href="/programs/part-time-web-development/">part-time web development program</Link> covers the same
-            curriculum over 24 weeks of evenings and Saturdays.
+            <Link href="/programs/part-time-web-development/">part-time online web development program</Link> covers the
+            same curriculum over 24 weeks of evenings and Saturdays.
           </p>
         </div>
       </section>
@@ -131,8 +132,8 @@ export default function Content() {
           <p className="eyebrow">Outcomes</p>
           <h2 className="section-title" id="outcomes">What you’ll be able to do</h2>
           <p className="section-intro">
-            By the end of the twelve weeks, you should be able to take a feature from an idea on a whiteboard to code
-            running on the internet. Concretely, you will be able to:
+            By the end of the twelve weeks, you should be able to take a feature from an idea on a shared whiteboard to
+            code running on the internet. Concretely, you will be able to:
           </p>
           <ul className="checklist">
             <li>Use Git and GitHub daily: branches, pull requests, code review and resolving merge conflicts in a team.</li>
@@ -157,7 +158,10 @@ export default function Content() {
               Deploy a full-stack application with environment variables, a hosted database and a public URL you can
               share with recruiters.
             </li>
-            <li>Work in a small team with agile rituals, then present your product confidently on demo day.</li>
+            <li>
+              Collaborate in a distributed team with agile rituals and async communication, then present your product
+              confidently at our online demo day.
+            </li>
           </ul>
         </div>
       </section>
@@ -191,7 +195,7 @@ export default function Content() {
               <p>
                 Variables, types, functions, arrays and objects, then modules, closures and modern ES2023 syntax. DOM
                 events, fetch and async/await. You build an interactive browser app that consumes a public API, and
-                practice problem-solving with daily algorithm katas.
+                practise problem-solving with daily algorithm katas.
               </p>
             </li>
             <li>
@@ -234,9 +238,9 @@ export default function Content() {
             <li>
               <h3>Weeks 11–12 · Final team project and demo day</h3>
               <p>
-                In teams of three or four, you plan, build and ship a complete product using sprints, a shared board and
-                pull-request reviews. The program closes with demo day, where each team presents its product live and
-                answers questions.
+                In remote teams of three or four, you plan, build and ship a complete product using sprints, a shared
+                board and pull-request reviews. The program closes with an online demo day, where each team presents its
+                product live and answers questions.
               </p>
             </li>
           </ol>
@@ -248,7 +252,8 @@ export default function Content() {
           <p className="eyebrow">Daily rhythm</p>
           <h2 className="section-title" id="typical-day">A typical day at the bootcamp</h2>
           <p className="section-intro">
-            Days are structured but hands-on: most of your time is spent writing code, not listening to slides.
+            Days are live, structured and hands-on: most of your time is spent writing code with your cohort, not
+            watching slides. Times below are in your cohort’s time zone ({site.timezones.uk} or {site.timezones.na}).
           </p>
           <div className="table-wrap">
             <table>
@@ -256,19 +261,20 @@ export default function Content() {
                 <tr><th scope="col">Time</th><th scope="col">Activity</th></tr>
               </thead>
               <tbody>
-                <tr><td>9:00–9:30</td><td>Stand-up and warm-up kata: what you did yesterday, what blocked you, a short coding challenge.</td></tr>
-                <tr><td>9:30–11:00</td><td>Live lesson with an instructor: new concept, live coding and questions.</td></tr>
-                <tr><td>11:00–12:30</td><td>Guided exercises in pairs, with instructors circulating to unblock you.</td></tr>
+                <tr><td>9:00–9:30</td><td>Video stand-up and warm-up kata: what you did yesterday, what blocked you, a short coding challenge.</td></tr>
+                <tr><td>9:30–11:00</td><td>Live lesson with an instructor: new concept, live coding in a shared environment and questions.</td></tr>
+                <tr><td>11:00–12:30</td><td>Remote pair programming in breakout rooms, with instructors and TAs dropping in to unblock you.</td></tr>
                 <tr><td>12:30–13:30</td><td>Lunch break — time to step away from the screen.</td></tr>
-                <tr><td>13:30–16:30</td><td>Project work: building the week’s project alone or in a team, with code reviews.</td></tr>
-                <tr><td>16:30–17:30</td><td>Review session, demos of the day’s progress and a recap of key points.</td></tr>
+                <tr><td>13:30–16:30</td><td>Project work: building the week’s project alone or in a team, with code reviews and 1:1 help on request.</td></tr>
+                <tr><td>16:30–17:30</td><td>Review session, screen-shared demos of the day’s progress and a recap of key points.</td></tr>
               </tbody>
             </table>
           </div>
           <div className="callout">
             <p>
-              <strong>Tip:</strong> Fridays often end with a short individual check-in so we can spot difficulties early
-              and adjust support before you fall behind.
+              <strong>Tip:</strong> Every live lesson is recorded, so you can rewatch a tricky concept later. Fridays
+              often end with a short 1:1 video check-in so we can spot difficulties early and adjust support before you
+              fall behind. Read more about how our <Link href="/online-learning/">live online classroom</Link> works.
             </p>
           </div>
         </div>
@@ -285,8 +291,8 @@ export default function Content() {
             <article className="card">
               <h3>Responsive business website</h3>
               <p>
-                An accessible, mobile-first site for a local business — think a surf school or a riad in Agadir — built
-                from a design mock-up with semantic HTML and modern CSS.
+                An accessible, mobile-first site for a small business — think an independent café, a gym or a local
+                tradesperson — built from a design mock-up with semantic HTML and modern CSS.
               </p>
             </article>
             <article className="card">
@@ -300,14 +306,14 @@ export default function Content() {
               <h3>Full-stack booking or marketplace app</h3>
               <p>
                 A React front end, Express API and PostgreSQL database with authentication, user roles and protected
-                routes — the kind of application many Moroccan businesses need.
+                routes — the kind of application small businesses and startups commission all the time.
               </p>
             </article>
             <article className="card">
               <h3>Final team product</h3>
               <p>
-                A product designed and built by your team over two weeks with sprints, tests and continuous deployment,
-                then presented live on demo day.
+                A product designed and built by your remote team over two weeks with sprints, tests and continuous
+                deployment, then presented live at online demo day.
               </p>
             </article>
           </div>
@@ -327,8 +333,8 @@ export default function Content() {
             <article className="card">
               <h3>Workflow</h3>
               <p>
-                Git, GitHub, pull requests, VS Code, the terminal, npm, ESLint and Prettier, and a shared project board
-                for sprints.
+                Git, GitHub, pull requests, VS Code, the terminal, npm, ESLint and Prettier, a shared project board for
+                sprints, video calls and a team chat workspace for async communication.
               </p>
             </article>
             <article className="card">
@@ -354,27 +360,27 @@ export default function Content() {
           <p className="eyebrow">After the bootcamp</p>
           <h2 className="section-title" id="careers">Careers this bootcamp prepares you for</h2>
           <p>
-            Graduates of a full-stack program typically apply for junior roles such as{' '}
+            Graduates of a full-stack program typically apply for entry-level roles such as{' '}
             <strong>junior full-stack developer</strong>, <strong>front-end developer (React)</strong>,{' '}
-            <strong>junior back-end or Node.js developer</strong>, <strong>web integrator</strong> or{' '}
-            <strong>freelance web developer</strong>. Some use the skills to build their own product or digitise a family
-            business.
+            <strong>junior back-end or Node.js developer</strong>, <strong>web developer</strong> or{' '}
+            <strong>freelance web developer</strong>. Some use the skills to build their own product or to automate work
+            in their current organisation.
           </p>
           <p>
-            Demand exists in Moroccan digital agencies, offshoring and nearshoring companies, startups, and in remote
-            roles for European clients — our article on{' '}
-            <Link href="/blog/remote-developer-jobs-from-morocco/">remote developer jobs from Morocco</Link> explains how
-            that market works, and <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and Souss-Massa</Link>{' '}
-            looks at the local picture. Salaries vary widely by city, company and your previous experience, so treat any
-            figure you read online as a rough indication, not a promise.
+            Junior roles exist across {site.marketsLabel} in digital agencies, startups, in-house product and IT teams,
+            and remote-first companies that hire across time zones. Our overview of{' '}
+            <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link> explains
+            what employers look for, and our <Link href="/blog/remote-developer-jobs-guide/">remote developer jobs guide</Link>{' '}
+            covers how remote hiring works. Salaries vary widely by country, city, company and your previous experience,
+            so treat any figure you read online as a rough indication, not a promise.
           </p>
           <p>
             A bootcamp does not guarantee a job: your results depend on your effort during and after the program, the
             portfolio you build and the current market. What we do provide is structured support through{' '}
             <Link href="/career-services/">Atlas Code career services</Link> — CV and LinkedIn reviews, GitHub portfolio
-            feedback, mock technical interviews and guidance on your job search. For the bigger picture, read our
-            step-by-step guide on{' '}
-            <Link href="/blog/how-to-become-web-developer-morocco/">how to become a web developer in Morocco</Link>.
+            feedback, mock technical interviews over video and guidance on your job search. For the bigger picture, read
+            our step-by-step guide on{' '}
+            <Link href="/blog/how-to-become-web-developer-uk/">how to become a web developer in the UK</Link>.
           </p>
         </div>
       </section>
@@ -384,8 +390,8 @@ export default function Content() {
           <p className="eyebrow">Investment</p>
           <h2 className="section-title" id="tuition">Tuition and next steps</h2>
           <p className="section-intro">
-            Tuition for the full-time program is <strong>{p.priceLabel}</strong>. A deposit of {site.deposit} secures
-            your seat once you are admitted.
+            Tuition for the full-time online program is <strong>{p.priceLabel}</strong>. A deposit of {site.deposit}{' '}
+            secures your seat once you are admitted.
           </p>
           <div className="grid grid-3">
             <article className="card">
@@ -395,18 +401,22 @@ export default function Content() {
             </article>
             <article className="card">
               <h3>2. Apply</h3>
-              <p>Fill in the short application, then talk with our team and complete a basic logic exercise.</p>
+              <p>Fill in the short application, then have a video call with our team and complete a basic logic exercise.</p>
               <Link className="card-link" href="/admissions/">Read how admissions work</Link>
             </article>
             <article className="card">
               <h3>3. Pick your cohort</h3>
-              <p>The next full-time cohort starts {p.nextStart}. Seats are limited to keep groups small.</p>
+              <p>
+                The next full-time cohort starts {p.nextStart}. Choose a UK or US Eastern time cohort; seats are limited to
+                keep groups small.
+              </p>
               <Link className="card-link" href="/upcoming-cohorts/">View upcoming cohort dates</Link>
             </article>
           </div>
           <p>
-            Want to see where you will study first? Visit our <Link href="/campus/">Agadir campus and student life</Link>{' '}
-            page, or call {site.phone} to arrange a visit.
+            Want to see how studying online works first? Visit our{' '}
+            <Link href="/online-learning/">online learning experience</Link> page, or{' '}
+            <Link href="/contact/">contact an advisor</Link> to book a short video call.
           </p>
         </div>
       </section>
@@ -419,23 +429,27 @@ export default function Content() {
             items={[
               {
                 q: 'Do I need any experience before joining?',
-                a: 'You do not need a degree in computer science, but you should have written some basic HTML, CSS and JavaScript. Complete our pre-work or join the Intro to Coding weekend workshop first if you are starting from zero.',
+                a: 'You do not need a degree in computer science, but you should have written some basic HTML, CSS and JavaScript. Complete our pre-work or join the Intro to Coding online weekend workshop first if you are starting from zero.',
               },
               {
-                q: 'Is this a formation développeur web recognised in Morocco?',
-                a: 'This is a private, intensive developer training program in Agadir focused on practical skills. You receive an Atlas Code certificate of completion; it is not a state diploma. Employers in tech generally look at your portfolio and technical interview performance more than the certificate itself.',
+                q: 'Which time zones do the live classes run in?',
+                a: `Each cohort runs on one schedule: either ${site.timezones.uk} or ${site.timezones.na}. You choose the cohort that suits your location and daily life, and all live sessions, stand-ups and demo day follow that time zone.`,
+              },
+              {
+                q: 'Do I need to live in the UK, the US or Canada?',
+                a: 'The program is designed for learners in the UK, the US and Canada, and classes run in those time zones. You can join from elsewhere if you can attend live sessions at the cohort times. If you plan to work in a particular country, having the right to work there is your responsibility; we cannot sponsor visas.',
               },
               {
                 q: 'Can I work or study at the same time?',
-                a: 'Not realistically. The program runs Monday to Friday from 9:00 to 17:30, with extra review in the evenings. If you need to keep your job, choose the part-time web development program instead.',
+                a: 'Not realistically. The program runs live Monday to Friday from 9:00 to 17:30 in your cohort time zone, with extra review in the evenings. If you need to keep your job, choose the part-time online web development program instead.',
               },
               {
-                q: 'Which language are classes taught in?',
-                a: 'Classes are taught in English and French, with Darija support when a concept needs a different explanation. Code, documentation and most job interviews in tech use English terms, so you will build that vocabulary along the way.',
+                q: 'What equipment do I need?',
+                a: 'A recent Windows, macOS or Linux laptop with 8 GB of RAM or more, a reliable broadband connection, a webcam and a headset with a microphone. A second monitor is helpful for coding while watching a live lesson, but it is not required.',
               },
               {
-                q: 'Do I need my own laptop?',
-                a: 'Yes, a personal laptop is strongly recommended so you can keep coding at home. Any recent Windows, macOS or Linux machine with 8 GB of RAM will do. Talk to us during admissions if this is a problem.',
+                q: 'What happens if I miss a live session?',
+                a: 'Live lessons are recorded and shared with your cohort, and instructors and TAs can help you catch up online. Attendance at live sessions is expected, though, because pair programming and team projects depend on it.',
               },
               {
                 q: 'Why JavaScript and not Python or PHP?',
@@ -445,8 +459,8 @@ export default function Content() {
           />
           <p>
             Prefer working with data rather than building apps? Compare this program with the{' '}
-            <Link href="/programs/data-analytics/">Data Analytics bootcamp</Link> or the{' '}
-            <Link href="/programs/ui-ux-design/">UI/UX Design bootcamp</Link>.
+            <Link href="/programs/data-analytics/">online Data Analytics bootcamp</Link> or the{' '}
+            <Link href="/programs/ui-ux-design/">online UI/UX Design bootcamp</Link>.
           </p>
         </div>
       </section>
@@ -455,8 +469,8 @@ export default function Content() {
         <div className="container">
           <h2>Ready to build your first full-stack application?</h2>
           <p>
-            Join the next full-time cohort in Agadir on {p.nextStart}. Apply in a few minutes, or talk to an advisor
-            about whether this program fits your goals.
+            Join the next full-time online cohort on {p.nextStart}. Apply in a few minutes, or talk to an advisor about
+            whether this program fits your goals.
           </p>
           <Link className="btn btn-primary" href="/apply/">Apply now</Link>{' '}
           <Link className="btn btn-ghost" href="/contact/">Talk to an advisor</Link>

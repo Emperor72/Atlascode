@@ -26,7 +26,7 @@ export default function TuitionPage() {
           </h2>
           <p className="section-intro">
             Tuition includes all teaching, course material, software licences used in class, career services and access to the alumni
-            community. There are no registration or exam fees.
+            community. There are no registration or exam fees. Prices are in US dollars; if you pay in pounds or Canadian dollars, your bank converts at its current rate.
           </p>
           <div className="table-wrap">
             <table>
@@ -97,7 +97,7 @@ export default function TuitionPage() {
               <h3>Scholarships</h3>
               <p>
                 Each cohort includes a limited number of partial, need-based scholarships, with seats reserved to encourage women in tech and
-                learners from rural areas of Souss-Massa. Mention it in your application.
+                learners from under-represented backgrounds. Mention it in your application.
               </p>
             </article>
             <article className="card">
@@ -108,10 +108,10 @@ export default function TuitionPage() {
               </p>
             </article>
             <article className="card">
-              <h3>Bank loans</h3>
+              <h3>Loans and other funding</h3>
               <p>
-                Some Moroccan banks offer personal or education loans. We can provide the documents your bank needs (enrollment
-                certificate, program description, invoice). Compare offers carefully before committing.
+                Some learners use personal loans or other funding available where they live. We can provide the documents a lender or funder
+                needs (enrollment letter, program description, invoice). Compare offers carefully before committing.
               </p>
             </article>
           </div>
@@ -136,8 +136,8 @@ export default function TuitionPage() {
             </li>
             <li>
               <strong>What is the realistic job market?</strong> Read our honest overview of{' '}
-              <Link href="/blog/tech-jobs-agadir-souss-massa/">tech jobs in Agadir and Souss-Massa</Link> and of{' '}
-              <Link href="/blog/remote-developer-jobs-from-morocco/">remote work from Morocco</Link>.
+              <Link href="/blog/junior-tech-jobs-uk-us-canada/">junior tech jobs in the UK, US and Canada</Link> and of{' '}
+              <Link href="/blog/remote-developer-jobs-guide/">remote developer jobs</Link>.
             </li>
             <li>
               <strong>Can I afford the time, not just the money?</strong> A full-time bootcamp means pausing income for a few months; the
@@ -146,7 +146,7 @@ export default function TuitionPage() {
           </ul>
           <p>
             Compared with a multi-year degree, a bootcamp costs less in total and gets you to the job market faster, but it is more
-            intense and doesn’t replace a degree for every career. Our guide to <Link href="/blog/coding-bootcamp-vs-university-morocco/">bootcamp vs university in Morocco</Link>{' '}
+            intense and doesn’t replace a degree for every career. Our guide to <Link href="/blog/coding-bootcamp-vs-university-degree/">bootcamp vs a university degree</Link>{' '}
             compares both paths honestly.
           </p>
           <div className="callout">
@@ -165,7 +165,7 @@ export default function TuitionPage() {
               },
               {
                 q: 'Are there hidden costs?',
-                a: 'No. Tuition covers teaching, material, software used in class and career services. Your own costs are your laptop, transport, meals and, if you come from outside Agadir, accommodation.',
+                a: 'No. Tuition covers teaching, material, software used in class and career services. Your own costs are your laptop, your internet connection and a headset. There is no travel or accommodation, because everything is online.',
               },
               {
                 q: 'Can I get a refund if I drop out?',
