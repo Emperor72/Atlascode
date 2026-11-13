@@ -1491,3 +1491,51 @@ tbody tr:last-child td {
     margin-left: auto;
   }
 }
+/* ---------- Fictional-business notice ---------- */
+.demo-banner {
+  background: linear-gradient(90deg, #1e1b4b, #312e81);
+  color: #e0e7ff;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  padding: 0.45rem 0;
+  text-align: center;
+}
+.demo-banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem 0.6rem;
+}
+.demo-banner strong {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.18);
+  color: #a5f3fc;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.footer-notice {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: #98a2bb;
+}
+.footer-notice p {
+  margin: 0;
+  max-width: 900px;
+}
+.footer-notice strong {
+  color: #e0e7ff;
+}
+.form-notice {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px dashed rgba(99, 102, 241, 0.5);
+  background: var(--sun-100);
+  color: var(--text);
+  font-size: 0.9rem;
+}

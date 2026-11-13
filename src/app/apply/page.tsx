@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { site } from '@/lib/site';
 import { CorePage, coreMetadata } from '@/components/CorePage';
+import { FormNotice } from '@/components/DemoNotice';
 
 const PATH = '/apply/';
 export const metadata = coreMetadata(PATH);
@@ -14,6 +15,7 @@ export default function ApplyPage() {
             <h2 id="form-title" className="h4" style={{ margin: 0 }}>
               Your application
             </h2>
+            <FormNotice />
             <input type="hidden" name="_subject" value="New application: atlascode website" />
             <div className="field">
               <label htmlFor="a-program">Program</label>

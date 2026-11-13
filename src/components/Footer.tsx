@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { site, whatsappLink } from '@/lib/site';
 import { LogoMark } from './Logo';
+import { DEMO_NOTICE } from './DemoNotice';
 
 const columns: { title: string; links: [string, string][] }[] = [
   {
@@ -93,6 +94,14 @@ export function Footer() {
             </ul>
           </nav>
         ))}
+      </div>
+      <div className="footer-notice">
+        <div className="container">
+          <p>
+            <strong>Fictional business notice:</strong> {DEMO_NOTICE} Names, prices, dates, contact details and policies shown on this
+            site are placeholders for demonstration purposes.
+          </p>
+        </div>
       </div>
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">

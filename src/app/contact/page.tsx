@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { site, whatsappLink } from '@/lib/site';
 import { CorePage, coreMetadata } from '@/components/CorePage';
+import { FormNotice } from '@/components/DemoNotice';
 
 const PATH = '/contact/';
 export const metadata = coreMetadata(PATH);
@@ -45,6 +46,7 @@ export default function ContactPage() {
               Send us a message
             </h2>
             <form className="form" action={site.formEndpoint} method="POST">
+              <FormNotice />
               <input type="hidden" name="_subject" value="Contact form: atlascode website" />
               <div className="form-row">
                 <div className="field">

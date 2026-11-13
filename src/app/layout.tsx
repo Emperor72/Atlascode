@@ -5,6 +5,7 @@ import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Effects } from '@/components/Effects';
+import { DemoBanner } from '@/components/DemoNotice';
 import { JsonLd } from '@/components/JsonLd';
 import { site } from '@/lib/site';
 import { organizationSchema } from '@/lib/seo';
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a className="skip-link" href="#main">
           Skip to content
         </a>
+        <DemoBanner />
         <Header />
         <main id="main">{children}</main>
         <Footer />

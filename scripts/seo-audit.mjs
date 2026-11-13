@@ -9,7 +9,7 @@ if (!existsSync(OUT)) {
 }
 
 const walk = (dir) => readdirSync(dir).flatMap((f) => (statSync(join(dir, f)).isDirectory() ? walk(join(dir, f)) : [join(dir, f)]));
-const htmlFiles = walk(OUT).filter((f) => f.endsWith('.html') && !f.endsWith('404.html') && !f.includes('_not-found') && !f.startsWith(join(OUT, '404')));
+const htmlFiles = walk(OUT).filter((f) => f.endsWith('.html') && !f.endsWith('404.html') && !f.includes('_not-found') && !f.startsWith(join(OUT, '404')) && !/google[0-9a-f]+\.html$/.test(f));
 const toUrl = (f) => '/' + relative(OUT, f).split(sep).join('/').replace(/index\.html$/, '');
 const pages = new Map(htmlFiles.map((f) => [toUrl(f), readFileSync(f, 'utf8')]));
 
